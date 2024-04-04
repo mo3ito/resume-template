@@ -38,4 +38,29 @@
     opacity: 1;
   }
 
+  /* .animation-button-talk {
+    margin: 0 auto;
+    position: relative;
+    position: absolute;
+    animation: slideUp 0.5s forwards;
+  }
+  
+  @keyframes moveUpDown {
+    0% {
+      transform: translateY(0%);
+    }
+    25% {
+      transform: translateY(-25%);
+    }
+    50% {
+      transform: translateY(-50%);
+    }
+    75% {
+      transform: translateY(-75%);
+    }
+    100% {
+      transform: translateY(-100%);
+    }
+  } */
+
 }
