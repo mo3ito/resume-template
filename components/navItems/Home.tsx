@@ -1,8 +1,9 @@
 import Introducer from "../Introducer";
+import { HomeRefProps } from "@/types/refTypes";
 
-export default function Home() {
+export default function Home(props : HomeRefProps) {
   return (
-    <div className="mb-44">
+    <div className="mb-44" ref={props.homeRef}>
       <Introducer
         keyWords="Let's meet!"
         header="I'm Mostafa Entezami (mo3ito)"

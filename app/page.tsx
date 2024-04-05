@@ -10,7 +10,7 @@ export default function Home() {
   const portfolioRef = useRef<HTMLDivElement | null>(null)
   const resumeRef = useRef<HTMLDivElement | null>(null)
    const contactRef = useRef<HTMLDivElement | null>(null)
-   
+
    const allItemsRef = {
     aboutMeRef,
     homeRef,

@@ -1,15 +1,12 @@
-'use client'
-import { useRef } from "react"
 import ContainerShowBox from "../ContainerShowBox"
 import Introducer from "../Introducer"
 import ShowBox from "../ShowBox"
+import { AboutMeProps } from "@/types/refTypes"
 
-export default function AboutMe(props) {
-
-    
+export default function AboutMe(props : AboutMeProps) {
 
   return (
-    <div id="about-me" ref={props.aboutMeRef}>
+    <div ref={props?.aboutMeRef}>
           <Introducer
         keyWords="About Me"
         header="Frontend Developer"
