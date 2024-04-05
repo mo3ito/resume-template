@@ -2,7 +2,7 @@ import Introducer from "../Introducer";
 
 export default function Home() {
   return (
-    <div className="text-7xl leading-relaxed ">
+    <div className="mb-44">
       <Introducer
         keyWords="Let's meet!"
         header="I'm Mostafa Entezami (mo3ito)"

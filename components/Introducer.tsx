@@ -11,8 +11,8 @@ export default function Introducer(props : Introducer ) {
 
 
   return (
-    <>
-    <button className="w-32 h-10 text-sm common-style-item shadow-sm flex items-center justify-center gap-x-2 opacity-80 ">
+    <div className="text-7xl leading-relaxed ">
+    <div className="w-32 h-10 text-sm common-style-item shadow-sm flex items-center justify-center gap-x-2 opacity-80 ">
       <svg
         className="dark:fill-white "
         xmlns="http://www.w3.org/2000/svg"
@@ -31,11 +31,11 @@ export default function Introducer(props : Introducer ) {
         ></path>
       </svg>
       {props.keyWords}
-    </button>
+    </div>
     <div className='tracking-tighter'>
      <h1 >{props.header}</h1>
      <h2>{props.description}</h2>
      </div>
-    </>
+    </div>
   );
 }
