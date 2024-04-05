@@ -38,6 +38,20 @@
     opacity: 1;
   }
 
+  /* 'w-44 h-14 border-2 text-black dark:text-white text-xl border-zinc-300 dark:border-zinc-800 rounded-3xl shadow-sm flex items-center justify-center gap-x-2 mt-10 font-semibold */
+  .common-style-item{
+    border-width: 2px;
+    border-color: rgb(212 212 216);
+    color: black;
+    border-radius: 24px;
+    font-weight: 600;
+  }
+
+  .dark .common-style-item{
+    color: white;
+    border-color: rgb(39 39 42);
+  }
+
   /* .animation-button-talk {
     margin: 0 auto;
     position: relative;

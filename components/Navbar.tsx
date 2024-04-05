@@ -8,7 +8,7 @@ export default function Navbar() {
     <header className="w-8/12  flex flex-col items-center text-zinc-800 dark:text-zinc-300 fixed right-16 z-50">
       <div className="flex justify-between items-center w-full">
         <ul className=" flex items-center justify-between text-xl font-bold [&>*]:item-nav   ">
-          <li className="border border-red-300">Home</li>
+          <li className="">Home</li>
           <li className="">Portfolio</li>
           <li className="">About Me</li>
           <li className="">Resume</li>

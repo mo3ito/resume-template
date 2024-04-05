@@ -16,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className=" h-max w-full bg-slate-200 dark:bg-black overflow-y-scroll ">{children}</body>
+      <body className=" h-max w-full bg-slate-200 dark:bg-black overflow-y-scroll">{children}</body>
     </html>
   );
 }
