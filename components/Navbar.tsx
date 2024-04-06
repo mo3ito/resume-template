@@ -1,25 +1,60 @@
 "use client";
+import { useEffect, useState , useRef } from "react";
 import handleScrollToView from "@/utils/handleScrollToView";
 import { allItemsRef } from "@/types/refTypes";
+import navItems from "@/data/navbarData";
 
 
 
 
 
 export default function Navbar(props : allItemsRef) {
+
+  const [activeElem, setActiveElem] = useState<null | HTMLElement>(null);
+  const [firstLoad , setFirstLoad]=useState(true)
+  const homeItemRef = useRef<null| HTMLElement>()
   const toggleTheme = () => {
     document.documentElement.classList.toggle("dark");
   };
+
+  const handle = async (element: HTMLElement , nameRef:HTMLElement) => {
+   await setActiveElem(element);
+   await setFirstLoad(false)
   
+    if (activeElem) {
+      activeElem?.classList?.remove("active");
+    }
+  
+    element?.classList?.add("active");
+
+    handleScrollToView(nameRef)
+  };
+  
+  useEffect(()=>{
+    if(firstLoad){ document.querySelector("#home-item")?.classList.add("active")
+  }else{
+      document.querySelector("#home-item")?.classList.remove("active")
+    }
+
+  },[firstLoad])
+  
+
+
+
   return (
     <header className="w-8/12  flex flex-col items-center text-zinc-800 dark:text-zinc-300 fixed right-16 z-50">
       <div className="flex justify-between items-center w-full">
         <ul className=" flex items-center justify-between text-xl font-bold [&>*]:item-nav   ">
-          <li onClick={()=>handleScrollToView(props.homeRef)}  className="">Home</li>
-          <li onClick={()=>handleScrollToView(props.aboutMeRef)} className="">About Me</li>
-          <li className="">Portfolio</li>
-          <li className="">Resume</li>
-          <li className="">Contact</li>
+          <li
+          id="home-item"
+          ref={homeItemRef}
+          onClick={(event)=>handle(event.currentTarget , props.homeRef)}
+          //  onClick={(event)=>handleScrollToView(props.homeRef)} 
+           className="transition-all duration-500 ease-in-out">Home</li>
+          <li  onClick={(event)=>handle(event.currentTarget , props.aboutMeRef)} className="">About Me</li>
+          <li onClick={(event)=>handleScrollToView(props.portfolioRef)} className="">Portfolio</li>
+          <li onClick={(event)=>handleScrollToView(props.resumeRef)}>Resume</li>
+          <li onClick={(event)=>handleScrollToView(props.contactRef)}>Contact</li>
         </ul>
         <div className=" h-max  w-3/12 flex items-center justify-center  ">
           <button

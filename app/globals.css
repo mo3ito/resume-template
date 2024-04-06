@@ -52,29 +52,19 @@
     border-color: rgb(39 39 42);
   }
 
-  /* .animation-button-talk {
-    margin: 0 auto;
-    position: relative;
-    position: absolute;
-    animation: slideUp 0.5s forwards;
+  .clicked-item{
+    border-width: 2px;
+    border-color: rgb(212 212 216);
+    color: black;
   }
-  
-  @keyframes moveUpDown {
-    0% {
-      transform: translateY(0%);
-    }
-    25% {
-      transform: translateY(-25%);
-    }
-    50% {
-      transform: translateY(-50%);
-    }
-    75% {
-      transform: translateY(-75%);
-    }
-    100% {
-      transform: translateY(-100%);
-    }
-  } */
+
+  .active{
+    border: 1px solid #a1a1aa;
+    border-radius: 30px;
+    opacity: 1 !important;
+    color: black;
+    transition: border 700ms ease-in !important;
+
+  }
 
 }
