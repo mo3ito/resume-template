@@ -1,18 +1,22 @@
+'use client'
+import { useRef } from "react";
+import { LegacyRef } from "react";
 
 
 
 type Introducer = {
     keyWords: string;
     header: string;
-    description?: string
+    description?: string;
 }
 
 export default function Introducer(props : Introducer ) {
 
 
+
   return (
     <div className="text-7xl leading-relaxed ">
-    <div className="w-32 h-10 text-sm common-style-item shadow-sm flex items-center justify-center gap-x-2 opacity-80 ">
+    <div  className="w-32 h-10 text-sm common-style-item shadow-sm flex items-center justify-center gap-x-2 opacity-80">
       <svg
         className="dark:fill-white "
         xmlns="http://www.w3.org/2000/svg"

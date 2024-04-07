@@ -38,7 +38,7 @@
     opacity: 1;
   }
 
-  /* 'w-44 h-14 border-2 text-black dark:text-white text-xl border-zinc-300 dark:border-zinc-800 rounded-3xl shadow-sm flex items-center justify-center gap-x-2 mt-10 font-semibold */
+
   .common-style-item{
     border-width: 2px;
     border-color: rgb(212 212 216);
@@ -64,6 +64,16 @@
     opacity: 1 !important;
     color: black;
     transition: border 700ms ease-in !important;
+
+  }
+
+ .dark .active{
+    border: 1px solid #e4e4e7;
+    border-radius: 30px;
+    opacity: 1 !important;
+    color: white;
+    transition: border 700ms ease-in !important;
+    z-index: 999;
 
   }
 

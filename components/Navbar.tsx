@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useState , useRef } from "react";
+import { useEffect, useState , useRef, LegacyRef  } from "react";
 import handleScrollToView from "@/utils/handleScrollToView";
 import { allItemsRef } from "@/types/refTypes";
 import navItems from "@/data/navbarData";
@@ -12,12 +12,13 @@ export default function Navbar(props : allItemsRef) {
 
   const [activeElem, setActiveElem] = useState<null | HTMLElement>(null);
   const [firstLoad , setFirstLoad]=useState(true)
-  const homeItemRef = useRef<null| HTMLElement>()
+  const [isPermition , setIspermition]=useState(false)
+  
   const toggleTheme = () => {
     document.documentElement.classList.toggle("dark");
   };
 
-  const handle = async (element: HTMLElement , nameRef:HTMLElement) => {
+  const handleClickItem = async (element: HTMLElement , nameRef: LegacyRef<HTMLDivElement>) => {
    await setActiveElem(element);
    await setFirstLoad(false)
   
@@ -37,24 +38,24 @@ export default function Navbar(props : allItemsRef) {
     }
 
   },[firstLoad])
+
+
+  
   
 
 
 
+
   return (
-    <header className="w-8/12  flex flex-col items-center text-zinc-800 dark:text-zinc-300 fixed right-16 z-50">
+    <header className="w-8/12 flex flex-col items-center text-zinc-800 dark:text-zinc-300 fixed right-16 z-50">
       <div className="flex justify-between items-center w-full">
-        <ul className=" flex items-center justify-between text-xl font-bold [&>*]:item-nav   ">
-          <li
-          id="home-item"
-          ref={homeItemRef}
-          onClick={(event)=>handle(event.currentTarget , props.homeRef)}
-          //  onClick={(event)=>handleScrollToView(props.homeRef)} 
-           className="transition-all duration-500 ease-in-out">Home</li>
-          <li  onClick={(event)=>handle(event.currentTarget , props.aboutMeRef)} className="">About Me</li>
-          <li onClick={(event)=>handleScrollToView(props.portfolioRef)} className="">Portfolio</li>
-          <li onClick={(event)=>handleScrollToView(props.resumeRef)}>Resume</li>
-          <li onClick={(event)=>handleScrollToView(props.contactRef)}>Contact</li>
+        <ul ref={props.navbarRef}  className=" flex items-center justify-between text-xl font-bold [&>*]:item-nav ">
+          <li id="home-item" onClick={(event)=>handleClickItem(event.currentTarget , props.homeRef as LegacyRef<HTMLDivElement>)}
+          className="transition-all duration-500 ease-in-out">Home</li>
+          <li  onClick={(event)=>handleClickItem(event.currentTarget , props.aboutMeRef as LegacyRef<HTMLDivElement>)} className="">About Me</li>
+          <li onClick={(event)=>handleClickItem(event.currentTarget,props.portfolioRef as LegacyRef<HTMLDivElement>)} className="">Portfolio</li>
+          <li onClick={(event)=>handleClickItem(event.currentTarget,props.resumeRef as LegacyRef<HTMLDivElement>)}>Resume</li>
+          <li onClick={(event)=>handleClickItem(event.currentTarget,props.contactRef as LegacyRef<HTMLDivElement>)}>Contact</li>
         </ul>
         <div className=" h-max  w-3/12 flex items-center justify-center  ">
           <button
