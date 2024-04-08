@@ -2,10 +2,6 @@
 import { useEffect, useState , useRef, LegacyRef  } from "react";
 import handleScrollToView from "@/utils/handleScrollToView";
 import { allItemsRef } from "@/types/refTypes";
-import navItems from "@/data/navbarData";
-
-
-
 
 
 export default function Navbar(props : allItemsRef) {
@@ -39,17 +35,10 @@ export default function Navbar(props : allItemsRef) {
 
   },[firstLoad])
 
-
-  
-  
-
-
-
-
   return (
     <header className="w-8/12 flex flex-col items-center text-zinc-800 dark:text-zinc-300 fixed right-16 z-50">
       <div className="flex justify-between items-center w-full">
-        <ul ref={props.navbarRef}  className=" flex items-center justify-between text-xl font-bold [&>*]:item-nav ">
+        <ul ref={props.navbarRef}  className=" flex items-center justify-between gap-x-2 text-xl font-bold dark:[&>*]:bg-black  [&>*]:item-nav [&>*]:bg-slate-200  [&>*]:shadow-md ">
           <li id="home-item" onClick={(event)=>handleClickItem(event.currentTarget , props.homeRef as LegacyRef<HTMLDivElement>)}
           className="transition-all duration-500 ease-in-out">Home</li>
           <li  onClick={(event)=>handleClickItem(event.currentTarget , props.aboutMeRef as LegacyRef<HTMLDivElement>)} className="">About Me</li>

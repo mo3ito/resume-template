@@ -2,15 +2,14 @@
 import { useEffect } from "react";
 import Introducer from "../Introducer";
 import { HomeRefProps } from "@/types/refTypes";
-import useSeparateNavbar from "@/hooks/useSeparateNavbar";
+
 
 export default function Home(props : HomeRefProps) {
 
   
-  useSeparateNavbar(props.homeRef , props.navbarRef)
 
   return (
-    <div className="mb-44 pt-64 bg-red-500" ref={props.homeRef}>
+    <div className="mb-44 pt-64 " ref={props.homeRef}>
       <Introducer
         keyWords="Let's meet!"
         header="I'm Mostafa Entezami (mo3ito)"

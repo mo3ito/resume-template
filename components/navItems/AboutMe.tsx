@@ -3,12 +3,11 @@ import ContainerShowBox from "../ContainerShowBox"
 import Introducer from "../Introducer"
 import ShowBox from "../ShowBox"
 import { AboutMeProps } from "@/types/refTypes"
-import useSeparateNavbar from "@/hooks/useSeparateNavbar"
 export default function AboutMe(props : AboutMeProps) {
 
-useSeparateNavbar(props.aboutMeRef , props.navbarRef )
+
   return (
-    <div ref={props?.aboutMeRef} className="bg-blue-300">
+    <div ref={props?.aboutMeRef} className="">
           <Introducer
         keyWords="About Me"
         header="Frontend Developer"

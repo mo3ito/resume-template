@@ -2,16 +2,39 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @layer components {
-  .item-nav {
-    padding: 16px 32px;
+  .theme-mode-icon {
+    width: 24px;
+    height: 24px;
+    fill: #27272a;
     opacity: 0.5;
     transition: opacity 500ms ease-in;
-    cursor: pointer;
   }
-  .item-nav:hover {
+  .theme-mode-icon:hover {
     opacity: 1;
+  }
+  .dark .theme-mode-icon {
+    fill: #d4d4d8;
+    opacity: 0.5;
+  }
+  .dark .theme-mode-icon:hover {
+    opacity: 1;
+  }
+
+  .item-nav {
+    padding: 16px 32px;
+    opacity: 0.6;
+    transition: opacity 500ms ease-in;
+    cursor: pointer;
+    border-radius: 30px;
+  }
+
+  .dark .item-nav {
+    opacity: 0.8;
+  }
+
+  .item-nav:hover {
+    opacity: .8;
     color: black;
   }
 
@@ -19,27 +42,23 @@
     opacity: 1;
     color: white;
   }
-  
-  .theme-mode-icon{
-    width: 24px;
-    height: 24px;
-    fill: #27272a;
-    opacity: .5;
-    transition: opacity 500ms ease-in;
-  }
-  .theme-mode-icon:hover{
-    opacity: 1;
-  }
-  .dark .theme-mode-icon{
-    fill: #d4d4d8;
-    opacity: .5;
-  }
-  .dark .theme-mode-icon:hover{
-    opacity: 1;
+
+  .active {
+    border: 1px solid #a1a1aa;
+    border-radius: 30px;
+    opacity: 1 !important;
+    color: black;
+    transition: border 700ms ease-in !important;
   }
 
+  .dark .active {
+    border: 1px solid #9a9aa3;
+    border-radius: 30px;
+    opacity: 1 !important;
+    color: white;
+  }
 
-  .common-style-item{
+  .common-style-item {
     border-width: 2px;
     border-color: rgb(212 212 216);
     color: black;
@@ -47,34 +66,8 @@
     font-weight: 600;
   }
 
-  .dark .common-style-item{
+  .dark .common-style-item {
     color: white;
     border-color: rgb(39 39 42);
   }
-
-  .clicked-item{
-    border-width: 2px;
-    border-color: rgb(212 212 216);
-    color: black;
-  }
-
-  .active{
-    border: 1px solid #a1a1aa;
-    border-radius: 30px;
-    opacity: 1 !important;
-    color: black;
-    transition: border 700ms ease-in !important;
-
-  }
-
- .dark .active{
-    border: 1px solid #e4e4e7;
-    border-radius: 30px;
-    opacity: 1 !important;
-    color: white;
-    transition: border 700ms ease-in !important;
-    z-index: 999;
-
-  }
-
 }
