@@ -7,7 +7,7 @@ export default function AboutMe(props : AboutMeProps) {
 
 
   return (
-    <div ref={props?.aboutMeRef} className="">
+    <div ref={props?.aboutMeRef} className="pt-36">
           <Introducer
         keyWords="About Me"
         header="Frontend Developer"

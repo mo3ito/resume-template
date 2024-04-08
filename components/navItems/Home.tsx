@@ -9,7 +9,7 @@ export default function Home(props : HomeRefProps) {
   
 
   return (
-    <div className="mb-44 pt-64 " ref={props.homeRef}>
+    <div className="pt-36 " ref={props.homeRef}>
       <Introducer
         keyWords="Let's meet!"
         header="I'm Mostafa Entezami (mo3ito)"

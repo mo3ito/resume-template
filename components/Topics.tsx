@@ -10,8 +10,9 @@ export default function Topics(props: allItemsRef) {
 
   return (
     <main className="w-8/12 absolute right-20 h-full pl-4 dark:text-pink-200 text-violet-600 ">
-      <Home homeRef={props.homeRef} navbarRef={props.navbarRef}/>
-      <AboutMe aboutMeRef={props.aboutMeRef} navbarRef={props.navbarRef} />
+      <Home homeRef={props.homeRef}/>
+      <AboutMe aboutMeRef={props.aboutMeRef}  />
+      <Portfolio portfolioRef={props.portfolioRef}/>
     </main>
   );
 }

@@ -70,4 +70,16 @@
     color: white;
     border-color: rgb(39 39 42);
   }
+  /* border border-zinc-400 rounded-[20px] p-3 opacity-80 */
+
+  .link-social-media{
+    border: 1px solid #a1a1aa;
+    padding: 10px;
+    opacity: .8;
+    border-radius: 18px;
+  }
+  .dark .link-social-media{
+    border: 1px solid white;
+  }
+
 }
