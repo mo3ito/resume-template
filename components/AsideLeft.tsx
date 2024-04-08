@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 export default function AsideLeft() {
   return (
-    <aside className=" dark:bg-[#111111] dark:border-zinc-800 dark:text-white w-3/12 px-12 py-6 rounded-[30px]  border border-zinc-300 bg-[#ebf0f7]  shadow-md fixed inset-y-12">
+    <aside className=" dark:bg-[#111111] dark:border-zinc-800 dark:text-white w-3/12 px-12 pt-4 rounded-[30px]  border border-zinc-300 bg-[#ebf0f7]  shadow-md fixed inset-y-12">
       <div className='w-full  h-full flex  flex-col '>
     <section className=' flex items-start justify-center h-max gap-x-2 mb-4'>
     <div className='flex items-center justify-center '>
@@ -15,14 +15,14 @@ export default function AsideLeft() {
     
     <img className='rounded-[30px] shadow-md ' src="mo3ito.jpg" alt="mo3ito-image" />
 
-      <section className='mt-10 mb-5 '>
+      <section className='my-5'>
         <h3 className='dark:text-zinc-300 text-zinc-600 '  >Specialization:</h3>
         <p className='text-xl font-semibold'>Frontend Developer</p>
       </section>
 
       <section className='mb-5 '>
         <h3 className='dark:text-zinc-300 text-zinc-600 font-semibold '  >skills:</h3>
-        <p className='text-sm font-semibold'>Html5, css3, JavaScript, TypeScript, React, Next.js, Tailwindcss, Redux, Node.js, Rest Api, Linux</p>
+        <p className='text-sm font-semibold'>Html5, css3, JavaScript, TypeScript, React, Next.js, Tailwindcss, Redux, Node.js, MongoDB, Rest Api, Npm, Linux</p>
       </section>
 
       <section className='mx-10'>
@@ -46,7 +46,7 @@ export default function AsideLeft() {
 
           
         </div>
-          <DefaultButton className="w-full mt-4" content="Gmail">
+          <DefaultButton isLinkTag={true} className="w-full mt-4" content="Gmail"  href="?modal=true">
           <svg className='size-7 inline-block ml-2 pt-1' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M3 3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3ZM20 7.23792L12.0718 14.338L4 7.21594V19H20V7.23792ZM4.51146 5L12.0619 11.662L19.501 5H4.51146Z"></path></svg>
           </DefaultButton>
 
