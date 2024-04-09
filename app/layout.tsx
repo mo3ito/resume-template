@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Modal from "@/components/Modal";
 import { Suspense } from "react";
+import ToastifyContainer from "@/components/providers/ToastifyContainer";
 
 
 export const metadata: Metadata = {
@@ -22,7 +23,7 @@ export default function RootLayout({
         <Suspense fallback={<>Loading...</>}>
         <Modal/>
         </Suspense>
-          
+        <ToastifyContainer/>
         </body>
     </html>
   );
