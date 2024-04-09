@@ -1,16 +1,18 @@
-import { Dispatch, SetStateAction, useEffect } from "react";
+import { useEffect } from "react";
+import { useRouter } from "next/navigation";
 
-type SetStateType = Dispatch<SetStateAction<boolean>>;
+
 
 const useDropDownHandler = <T extends HTMLElement | null>(
   refName: React.RefObject<T>,
-  setState: SetStateType
+  path: string
 ) => {
+  const router = useRouter()
   useEffect(() => {
     const dropDownHandler = (event: MouseEvent) => {
       if (refName && refName?.current) {
         if (!refName?.current.contains(event.target as Node)) {
-          setState(false);
+          router.push(path)
         }
       }
     };
