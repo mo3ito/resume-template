@@ -4,7 +4,6 @@ import "./globals.css";
 import Modal from "@/components/Modal";
 import { Suspense } from "react";
 
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "mo3ito resume",
