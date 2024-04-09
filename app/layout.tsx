@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Modal from "@/components/Modal";
+import MailModal from "@/components/mail/MailModal";
 import { Suspense } from "react";
 import ToastifyContainer from "@/components/providers/ToastifyContainer";
+import Loading from "@/components/Loading";
 
 
 export const metadata: Metadata = {
@@ -20,8 +21,8 @@ export default function RootLayout({
     <html lang="en">
       <body className=" h-max w-full bg-slate-200 dark:bg-black overflow-y-scroll">
         {children}
-        <Suspense fallback={<>Loading...</>}>
-        <Modal/>
+        <Suspense fallback={<Loading/>}>
+        <MailModal/>
         </Suspense>
         <ToastifyContainer/>
         </body>

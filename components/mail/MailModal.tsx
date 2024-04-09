@@ -1,13 +1,11 @@
 'use client'
 import { useSearchParams , usePathname } from "next/navigation";
 import Link from "next/link";
-import { Suspense, useState } from "react";
-import { ContactMe } from "./mail/ContactMe";
+import { ContactMe } from "./ContactMe";
 
 
- export default function Modal() {
+ export default function MailModal() {
 
-   
     const searchParams = useSearchParams();
     const modal = searchParams.get("modal");
     const pathname = usePathname();

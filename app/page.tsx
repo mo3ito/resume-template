@@ -3,6 +3,7 @@ import { useEffect, useRef , useState } from "react";
 import Navbar from "@/components/Navbar";
 import AsideLeft from "@/components/AsideLeft";
 import Topics from "@/components/Topics";
+import Loading from "@/components/Loading";
 
 export default function Home() {
   const aboutMeRef = useRef<HTMLDivElement | null>(null)
