@@ -1,6 +1,6 @@
 import React from "react";
-import Loading from "@/components/Loading";
+import LoadingPage from "@/components/Loading";
 
-export default function loading() {
-  return <Loading />;
+export default function Loading() {
+  return <LoadingPage />;
 }
