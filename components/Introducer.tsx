@@ -1,10 +1,4 @@
 
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap')
-</style>
-
-
-
 type Introducer = {
     keyWords: string;
     header: string;
@@ -12,8 +6,6 @@ type Introducer = {
 }
 
 export default function Introducer(props : Introducer ) {
-
-
 
   return (
     <div className="text-5xl leading-relaxed font-tiltNeon ">

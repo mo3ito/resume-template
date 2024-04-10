@@ -11,7 +11,7 @@ export type allItemsRef = {
   contactRef: HTMLElementRef;
 };
 
-export type HomeRefProps = Pick<allItemsRef, "homeRef" >;
+export type HomeProps = Pick<allItemsRef, "homeRef" | "portfolioRef" >;
 
 export type AboutMeProps = Pick<allItemsRef, "aboutMeRef">;
 

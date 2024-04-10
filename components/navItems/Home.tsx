@@ -1,21 +1,22 @@
 'use client'
-import { useEffect } from "react";
+import { LegacyRef } from "react";
 import Introducer from "../Introducer";
-import { HomeRefProps } from "@/types/refTypes";
+import { HomeProps } from "@/types/refTypes";
+import handleScrollToView from "@/utils/handleScrollToView";
 
 
-export default function Home(props : HomeRefProps) {
+export default function Home({ homeRef , portfolioRef}:HomeProps) {
 
   
 
   return (
-    <div className="pt-36 " ref={props.homeRef}>
+    <div className="pt-36 " ref={homeRef}>
       <Introducer
         keyWords="Let's meet!"
         header="I'm Mostafa Entezami (mo3ito)"
         description="Web Developer"
       />
-      <button className="w-44 h-14 text-xl  common-style-item shadow-sm flex items-center justify-center gap-x-2 mt-10 ">
+      <button onClick={()=>handleScrollToView(portfolioRef as LegacyRef<HTMLDivElement>)} className="w-44 h-14 text-xl  common-style-item shadow-sm flex items-center justify-center gap-x-2 mt-10 ">
         My Works
         <svg
           className="size-5 mt-1 dark:fill-white stroke-2"
