@@ -8,7 +8,7 @@ github: "https://github.com/mo3ito",
 instagram:"https://www.instagram.com/mo3ito",
 telegram: "https://www.t.me/mo3ito",
 specialization:"Frontend Developer",
-skills: "Html5, css3, JavaScript, TypeScript, React, Next.js, Tailwindcss, Redux, Node.js, MongoDB, Rest Api, Npm, Linux",
+skills: "Html5, css3, JavaScript, TypeScript, React, Next.js, Tailwindcss, Redux, Node.js, MongoDB, Rest Api, Npm, Git, Responsive Design ,Linux",
 navBarItems:[
     {id:uuid() , navItem:"Home" , nameRef:"homeRef"},
     {id:uuid() , navItem:"About Me" , nameRef:"aboutMeRef"},

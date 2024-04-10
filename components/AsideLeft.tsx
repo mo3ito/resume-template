@@ -5,7 +5,7 @@ import data from '@/data/data'
 
 export default function AsideLeft() {
   return (
-    <aside className=" dark:bg-[#111111] dark:border-zinc-800 dark:text-white w-3/12 px-12  rounded-[30px]  border border-zinc-300 bg-[#ebf0f7]  shadow-md fixed py-5">
+    <aside className=" dark:bg-[#111111] dark:border-zinc-800 dark:text-white w-3/12 px-12  rounded-[30px]  border border-zinc-300 bg-[#ebf0f7]  shadow-md fixed py-3">
       <div className='w-full  h-full flex  flex-col '>
     <section className=' flex items-start justify-center h-max gap-x-2 mb-4'>
     <div className='flex items-center justify-center '>
