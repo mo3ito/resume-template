@@ -1,11 +1,23 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter , Syne , Tilt_Neon} from "next/font/google";
 import "./globals.css";
 import MailModal from "@/components/mail/MailModal";
 import { Suspense } from "react";
 import ToastifyContainer from "@/components/providers/ToastifyContainer";
 import LoadingPage from "@/components/Loading";
 
+const tiltNeon = Tilt_Neon({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-tiltNeon',
+})
+
+const syne = Syne({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-syne',
+})
+ 
 
 export const metadata: Metadata = {
   title: "mo3ito resume",
@@ -19,7 +31,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className=" h-max w-full bg-slate-200 dark:bg-black overflow-y-scroll">
+      <body className={` ${syne.variable} ${tiltNeon.variable} h-max w-full bg-slate-200 dark:bg-black overflow-y-scroll`}>
         {children}
         <Suspense fallback={<LoadingPage/>}>
         <MailModal/>

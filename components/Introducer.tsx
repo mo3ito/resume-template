@@ -1,6 +1,7 @@
-'use client'
-import { useRef } from "react";
-import { LegacyRef } from "react";
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap')
+</style>
 
 
 
@@ -15,7 +16,7 @@ export default function Introducer(props : Introducer ) {
 
 
   return (
-    <div className="text-7xl leading-relaxed ">
+    <div className="text-5xl leading-relaxed font-tiltNeon ">
     <div  className="w-32 h-10 text-sm common-style-item shadow-sm flex items-center justify-center gap-x-2 opacity-80">
       <svg
         className="dark:fill-white "
@@ -36,8 +37,8 @@ export default function Introducer(props : Introducer ) {
       </svg>
       {props.keyWords}
     </div>
-    <div className='tracking-tighter'>
-     <h1 >{props.header}</h1>
+    <div className=' font-semibold '>
+     <h1 className="">{props.header}</h1>
      <h2>{props.description}</h2>
      </div>
     </div>
