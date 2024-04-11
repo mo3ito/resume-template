@@ -40,7 +40,7 @@ export default function Navbar(props : allItemsRef) {
   
 
   return (
-    <header className="w-8/12 flex flex-col items-center   fixed right-16 z-50 font-syne">
+    <header className="w-8/12 flex flex-col items-center   fixed right-16 z-50 ">
       <div className="flex justify-between items-center w-full">
         <ul className=" flex items-center justify-between gap-x-2 text-xl font-bold dark:[&>*]:bg-black  [&>*]:item-nav [&>*]:bg-slate-200  [&>*]:shadow-md ">
           {data.navBarItems.map(item=>

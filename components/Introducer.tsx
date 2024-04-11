@@ -8,7 +8,7 @@ type Introducer = {
 export default function Introducer(props : Introducer ) {
 
   return (
-    <div className="text-5xl leading-relaxed font-tiltNeon ">
+    <div className="text-5xl leading-relaxed font-exo2 ">
     <div  className="w-32 h-10 text-sm common-style-item shadow-sm flex items-center justify-center gap-x-2 opacity-80">
       <svg
         className="dark:fill-white "

@@ -1,21 +1,21 @@
 import type { Metadata } from "next";
-import { Inter , Syne , Tilt_Neon} from "next/font/google";
+import {  Josefin_Sans , Exo_2} from "next/font/google";
 import "./globals.css";
 import MailModal from "@/components/mail/MailModal";
 import { Suspense } from "react";
 import ToastifyContainer from "@/components/providers/ToastifyContainer";
 import LoadingPage from "@/components/Loading";
 
-const tiltNeon = Tilt_Neon({
+const exo2 = Exo_2({
   subsets: ['latin'],
   display: 'swap',
-  variable: '--font-tiltNeon',
+  variable: '--font-exo2',
 })
 
-const syne = Syne({
+const josefinsSans = Josefin_Sans({
   subsets: ['latin'],
   display: 'swap',
-  variable: '--font-syne',
+  variable: '--font-josefinsSans',
 })
  
 
@@ -31,7 +31,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={` ${syne.variable} ${tiltNeon.variable} h-max w-full bg-slate-200 dark:bg-black overflow-y-scroll text-zinc-600 dark:text-zinc-300`}>
+      <body  className={` ${josefinsSans.variable} ${exo2.variable} font-josefinsSans h-max w-full bg-slate-200 dark:bg-black overflow-y-scroll text-zinc-600 dark:text-zinc-300`}>
         {children}
         <Suspense fallback={<LoadingPage/>}>
         <MailModal/>

@@ -10,10 +10,9 @@ const config: Config = {
   darkMode: "class",
   theme: {
     extend: {
-
       fontFamily:{
-        tiltNeon: ['var(--font-tiltNeon)'],
-        syne: ['var(--font-syne)'],
+        exo2: ['var(--font-exo2)'],
+        josefinsSans: ['var(--font-josefinsSans)'],
       },
     },
   },

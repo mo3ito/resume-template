@@ -1,22 +1,22 @@
-Syne Variable Font
+josefinsSans Variable Font
 ==================
 
-This download contains Syne as both a variable font and static fonts.
+This download contains josefinsSans as both a variable font and static fonts.
 
-Syne is a variable font with this axis:
+josefinsSans is a variable font with this axis:
   wght
 
 This means all the styles are contained in a single file:
-  Syne-VariableFont_wght.ttf
+  josefinsSans-VariableFont_wght.ttf
 
 If your app fully supports variable fonts, you can now pick intermediate styles
 that aren’t available as static fonts. Not all apps support variable fonts, and
-in those cases you can use the static font files for Syne:
-  static/Syne-Regular.ttf
-  static/Syne-Medium.ttf
-  static/Syne-SemiBold.ttf
-  static/Syne-Bold.ttf
-  static/Syne-ExtraBold.ttf
+in those cases you can use the static font files for josefinsSans:
+  static/josefinsSans-Regular.ttf
+  static/josefinsSans-Medium.ttf
+  static/josefinsSans-SemiBold.ttf
+  static/josefinsSans-Bold.ttf
+  static/josefinsSans-ExtraBold.ttf
 
 Get started
 -----------
