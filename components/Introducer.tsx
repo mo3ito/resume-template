@@ -29,7 +29,7 @@ export default function Introducer(props : Introducer ) {
       </svg>
       {props.keyWords}
     </div>
-    <div className=' font-semibold '>
+    <div className=' font-semibold text-purple-700 dark:text-pink-200'>
      <h1 className="">{props.header}</h1>
      <h2>{props.description}</h2>
      </div>

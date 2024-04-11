@@ -31,7 +31,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={` ${syne.variable} ${tiltNeon.variable} h-max w-full bg-slate-200 dark:bg-black overflow-y-scroll`}>
+      <body className={` ${syne.variable} ${tiltNeon.variable} h-max w-full bg-slate-200 dark:bg-black overflow-y-scroll text-zinc-600 dark:text-zinc-300`}>
         {children}
         <Suspense fallback={<LoadingPage/>}>
         <MailModal/>
