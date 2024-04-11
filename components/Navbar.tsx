@@ -51,7 +51,7 @@ export default function Navbar(props : allItemsRef) {
         <div className=" h-max  w-3/12 flex items-center justify-center  ">
           <button
             onClick={toggleTheme}
-            className=" flex items-center justify-center  transition-opacity ease-in-out duration-500 [&>*]:theme-mode-icon w-1/3"
+            className=" flex items-center justify-center  transition-opacity ease-in-out duration-500 [&>*]:theme-mode-icon size-max -translate-x-10"
           >
             <svg
               className=" hidden dark:block "

@@ -17,7 +17,9 @@ export default function Portfolio(props: PortfolioProps) {
       </ContainerShowBox>
 
       <div className="text-xl">
-        <h1 className="font-bold text-2xl mb-4 text-purple-700 dark:text-pink-200 ">my projects</h1>
+        <h1 className="font-bold text-2xl mb-4 text-purple-700 dark:text-pink-200 ">
+          my projects
+        </h1>
         <DiscribeProject
           projectName="Siraf"
           descriptionProject="The Siraf site is an application for buying and selling, renting and consulting in the field of real estate, which is coded with the next.js framework, and I have worked as a frontend developer in its programming team."

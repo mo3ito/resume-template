@@ -1,12 +1,13 @@
-import React from 'react'
+import React, { ReactNode } from 'react'
 import Link from 'next/link'
+
 
 
 type DiscribeProjectProps = {
     projectName: string ;
     descriptionProject: string 
     linkProject: string
-    githubLink?: string
+    githubLink?: ReactNode
 }
 
 
