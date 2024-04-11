@@ -12,10 +12,7 @@ export default function AboutMe(props : AboutMeProps) {
         keyWords="About Me"
         header="Frontend Developer"
       />
-        <ContainerShowBox>
-        <ShowBox contentValue="Years of experience" value="2+"/>
-        <ShowBox contentValue="Projects done" value="5+"/>
-        </ContainerShowBox>
+
         
 
       <p className="text-xl text-zinc-600 dark:text-white">
