@@ -11,13 +11,13 @@
     transition: opacity 500ms ease-in;
   }
   .theme-mode-icon:hover {
-    
+    background-color: #e2e8f0;
     opacity: 1;
   }
   .dark .theme-mode-icon {
     background-color: black;
     fill: #d4d4d8;
-    opacity: 0.5;
+    opacity: 0.8;
   }
   .dark .theme-mode-icon:hover {
     
@@ -26,20 +26,22 @@
 
   .item-nav {
     padding: 16px 32px;
-    opacity: 0.6;
-    transition: opacity 500ms ease-in;
+    opacity: 0.8;
+    transition: opacity 700ms ease-in ;
     cursor: pointer;
     border-radius: 30px;
   }
 
-  .dark .item-nav {
-    opacity: 0.8;
-  }
-
   .item-nav:hover {
-    opacity: .8;
+    opacity: .9;
     color: black;
   }
+  .dark .item-nav {
+    opacity: 0.8 ;
+
+  }
+
+
 
   .dark .item-nav:hover {
     opacity: 1;
@@ -55,9 +57,10 @@
   }
 
   .dark .active {
-    border: 1px solid #9a9aa3;
+    border: 1px solid white ;
     border-radius: 30px;
-    opacity: 1 !important;
+    opacity: 1 ;
+    transition: border 700ms ease-in ;
     color: white;
   }
 
