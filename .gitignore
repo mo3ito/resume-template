@@ -35,5 +35,6 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-# ContactMe component
-/components/mail/ContactMe.tsx
+
+# sendMailHandler
+/utils/sendMailHandler.tsx
