@@ -5,7 +5,7 @@ import data from '@/data/data'
 
 export default function AsideLeft() {
   return (
-    <aside className=" dark:text-zinc-300 text-zinc-600 dark:bg-[#111111] dark:border-zinc-800 w-3/12 px-12  rounded-[30px]  border border-zinc-300 bg-[#ebf0f7]  shadow-md fixed py-3">
+    <aside className=" dark:text-zinc-300 text-zinc-600 dark:bg-[#111111] dark:border-zinc-800 w-full xl:w-3/12 px-12 rounded-[30px]  border border-zinc-300 bg-[#ebf0f7]  shadow-md fixed py-3">
       <div className='w-full  h-full flex  flex-col '>
     <section className=' flex items-start justify-center h-max gap-x-2 mb-4'>
     <div className='flex items-center justify-center '>
@@ -47,7 +47,7 @@ export default function AsideLeft() {
 
           
         </div>
-          <DefaultButton isLinkTag={true} className="w-full mt-4" content="Email"  href="?modal=true">
+          <DefaultButton isLinkTag={true} className="w-full mt-4 h-16" content="Email"  href="?modal=true">
           <svg className='size-7 inline-block ml-2 -translate-y-1' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M3 3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3ZM20 7.23792L12.0718 14.338L4 7.21594V19H20V7.23792ZM4.51146 5L12.0619 11.662L19.501 5H4.51146Z"></path></svg>
           </DefaultButton>
 
