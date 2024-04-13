@@ -18,10 +18,10 @@ export default function ContactMeBox() {
         sendMailHandler(setIsLoadingForResponse, mailFormRef, router)
       }
     >
-      <div className="flex items-center justify-between  flex-wrap gap-y-8">
+      <div className="flex flex-col md:flex-row items-center justify-between flex-wrap gap-y-8">
         <InputForEmailForm
-          className="w-1/2"
-          classNameInput="w-11/12"
+          className=" w-full md:w-1/2"
+          classNameInput=" w-full md:w-11/12"
           type="text"
           placeholder="Full Name*"
           name="user-full-name"
@@ -29,13 +29,13 @@ export default function ContactMeBox() {
         <InputForEmailForm
           required={true}
           classNameInput="w-full"
-          className="w-1/2"
+          className=" w-full md:w-1/2"
           type="email"
           placeholder="Email Address*"
           name="user-email"
         />
         <InputForEmailForm
-          className="w-full"
+          className=" w-full lg:w-1/2"
           classNameInput="w-full"
           type="text"
           placeholder="Subject*"
@@ -44,16 +44,16 @@ export default function ContactMeBox() {
         <textarea
           name="user-message"
           placeholder="a few words*"
-          className="dark:focus:border-pink-200 dark:border-zinc-600 resize-none font-bold outline-none focus:border-b-2 focus:border-purple-700 border-b-2 border-zinc-300 w-full  text-xl bg-transparent h-36 overflow-auto"
+          className="dark:focus:border-pink-200 dark:border-zinc-600 resize-none font-bold outline-none focus:border-b-2 focus:border-purple-700 border-b-2 border-zinc-300 w-full text-sm sm:text-base lg:text-xl  bg-transparent h-36 overflow-auto"
         ></textarea>
       </div>
       <DefaultButton
         isLoading={isLoadingForResponse}
         content="Send Message"
-        className=" dark:text-black w-80 my-8 text-white h-16"
+        className=" dark:text-black w-44  lg:w-80 my-8 text-white h-12 lg:h-16"
       >
         <svg
-          className="size-6 inline-block  ml-2 fill-white dark:fill-black"
+          className=" size-4  lg:size-6 inline-block  ml-2 fill-white dark:fill-black"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
         >

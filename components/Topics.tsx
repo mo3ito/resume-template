@@ -8,7 +8,7 @@ import CnontactMeSection from "./navItems/CnontactMeSection";
 export default function Topics(props: allItemsRef) {
 
   return (
-    <main className="w-8/12 lg:absolute lg:right-20 h-full lg:pl-16 2xl:pl-10  ">
+    <main className="lg:w-8/12 lg:absolute lg:right-20 h-full lg:pl-16 2xl:pl-10  ">
       <Home homeRef={props.homeRef} portfolioRef={props.portfolioRef} />
       <AboutMe aboutMeRef={props.aboutMeRef}  />
       <Portfolio portfolioRef={props.portfolioRef}/>

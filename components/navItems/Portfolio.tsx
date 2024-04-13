@@ -8,7 +8,7 @@ import DiscribeProject from "../DiscribeProject";
 
 export default function Portfolio(props: PortfolioProps) {
   return (
-    <div ref={props?.portfolioRef} className="py-36">
+    <div ref={props?.portfolioRef} className=" pt-10 lg:pt-36">
       <Introducer keyWords="Portfolio" header="Frontend Developer" />
 
       <ContainerShowBox>
@@ -16,7 +16,7 @@ export default function Portfolio(props: PortfolioProps) {
         <ShowBox contentValue="Projects done" value="+5" />
       </ContainerShowBox>
 
-      <div className="text-xl">
+      <div className=" text-base md:text-lg:text-xl">
         <h1 className="font-bold text-2xl mb-4 text-purple-700 dark:text-pink-200 ">
           my projects
         </h1>

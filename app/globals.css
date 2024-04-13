@@ -80,9 +80,7 @@
 
   .link-social-media{
     border: 1px solid #a1a1aa;
-    padding: 10px;
     opacity: .8;
-    border-radius: 18px;
   }
   .dark .link-social-media{
     border: 1px solid white;
@@ -97,5 +95,6 @@
     padding: 0 12px;
     margin: 8px 0;
   }
+  
 
 }
