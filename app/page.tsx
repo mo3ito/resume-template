@@ -21,7 +21,7 @@ export default function Home() {
    }
 
   return (
-    <main className="w-full mx-auto flex flex-col lg:flex-row px-4 sm:px-8 md:px-12 lg:px-14 py-9 lg:relative ">
+    <main className="w-full mx-auto flex flex-col lg:flex-row px-4 sm:px-8 md:px-12 lg:px-14 py-9 lg:relative lg:overflow-y-auto   ">
       <AsideLeft />
       <Navbar {...allItemsRef}  />
       <Topics {...allItemsRef} />
