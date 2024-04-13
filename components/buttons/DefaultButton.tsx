@@ -17,7 +17,7 @@ export default function DefaultButton({content , children , className='w-max' , 
    
     <>
     { isLinkTag ? <Link href={href as Url} className={`${className} dark:text-black text-white group overflow-hidden  flex items-center justify-center text-center font-semibold  bg-gradient-to-r from-violet-400 to-violet-700 dark:from-pink-200 dark:to-violet-200 rounded-3xl text-xl  relative`}  >
-    <span className=" xl:text-sm 2xl:text-xl ">
+    <span className="  lg:text-sm xl:text-base 2xl:text-xl ">
     {content}
     {children}
     </span>
