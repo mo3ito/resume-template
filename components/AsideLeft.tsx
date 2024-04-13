@@ -6,7 +6,7 @@ import Image from 'next/image'
 
 export default function AsideLeft() {
   return (
-    <aside className=" dark:text-zinc-300 text-zinc-600 dark:bg-[#111111] dark:border-zinc-800  w-full lg:w-3/12 px-5 lg:px-4 xl:px-6 2xl:px-12 rounded-[30px]  border border-zinc-300 bg-[#ebf0f7]  shadow-md lg:sticky lg:top-3  py-3">
+    <aside className=" dark:text-zinc-300 text-zinc-600 dark:bg-[#111111] dark:border-zinc-800  w-full lg:w-3/12 px-5 lg:px-4 xl:px-6 2xl:px-12 rounded-[30px] lg:rounded-2xl xl:rounded-[30px]  border border-zinc-300 bg-[#ebf0f7]  shadow-md lg:sticky lg:top-3  py-3">
       <div className='w-full  h-full flex  flex-col '>
     <section className='flex items-start  h-max gap-x-2 mb-4'>
     <div className='flex items-center justify-center'>

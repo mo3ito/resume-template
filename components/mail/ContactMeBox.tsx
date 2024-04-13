@@ -35,7 +35,7 @@ export default function ContactMeBox() {
           name="user-email"
         />
         <InputForEmailForm
-          className=" w-full lg:w-1/2"
+          className=" w-full "
           classNameInput="w-full"
           type="text"
           placeholder="Subject*"

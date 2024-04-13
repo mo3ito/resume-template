@@ -8,7 +8,7 @@ type Introducer = {
 export default function Introducer(props : Introducer ) {
 
   return (
-    <div className=" text-2xl sm:text-4xl lg:text-5xl font-exo2 mb-2 ">
+    <div className=" text-2xl sm:text-4xl  xl:text-5xl font-exo2 mb-2 ">
     <div  className=" w-32 h-8  lg:h-10 text-sm common-style-item shadow-sm flex items-center justify-center gap-x-2 opacity-80">
       <svg
         className="dark:fill-white "
@@ -29,7 +29,7 @@ export default function Introducer(props : Introducer ) {
       </svg>
       {props.keyWords}
     </div>
-    <div className='leading-tight font-semibold mt-2 lg:mt-0 text-purple-700 dark:text-pink-200'>
+    <div className='leading-tight font-semibold mt-2  text-purple-700 dark:text-pink-200'>
      <h1 className="">{props.header}</h1>
      <h2>{props.description}</h2>
      </div>
