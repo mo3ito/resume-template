@@ -10,18 +10,18 @@ telegram: "https://www.t.me/mo3ito",
 specialization:"Frontend Developer",
 skills: "Html5, css3, JavaScript, TypeScript, React, Next.js, Tailwindcss, Redux, Node.js, MongoDB, Rest Api, Npm, Git, Responsive Design ,Linux",
 navBarItems:[
-    {id:uuid() , navItem:"Home" , nameRef:"homeRef"},
+    {id:"home-item" , navItem:"Home" , nameRef:"homeRef"},
     {id:uuid() , navItem:"About Me" , nameRef:"aboutMeRef"},
     {id:uuid() , navItem:"Portfolio" , nameRef:"portfolioRef"},
     {id:uuid() , navItem:"Resume" , nameRef:"resumeRef"},
     {id:uuid() , navItem:"Contact Me" , nameRef:"contactRef"},
 ],
 iconNavbarItems:[
-    { id: uuid(), navItem: 1 , nameRef: "homeRef" },
-    {id:uuid() , navItem:  2, nameRef:"aboutMeRef"},
-    {id:uuid() , navItem:2 , nameRef:"portfolioRef"},
-    {id:uuid() , navItem:3, nameRef:"resumeRef"},
-    {id:uuid() , navItem:4 , nameRef:"contactRef"},
+    { id: "home-item-mobile", navItem: "/icons/home.png" , nameRef: "homeRef" },
+    {id:uuid() , navItem:  "/icons/people.png", nameRef:"aboutMeRef"},
+    {id:uuid() , navItem:"/icons/four-squares-button-of-view-options.png" , nameRef:"portfolioRef"},
+    // {id:uuid() , navItem:3, nameRef:"resumeRef"},
+    {id:uuid() , navItem:"/icons/mail.png" , nameRef:"contactRef"},
 ]
  }
 

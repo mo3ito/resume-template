@@ -1,14 +1,19 @@
-import { useEffect } from "react";
+import { Dispatch, SetStateAction, useEffect } from "react";
 
+const useFirstLoad = (
+  firstLoad: boolean, setFirstLoad: Dispatch<SetStateAction<boolean>>, active: string , idName : string) => {
 
-const useFirstLoad = (firstLoad: boolean) => {
   useEffect(() => {
-    if (firstLoad) {
-      document.querySelector("#home-item")?.classList.add("active");
+    setFirstLoad(true);
+  }, []);
+
+  useEffect(() => {
+    if (firstLoad && active) {
+      document.querySelector(idName)?.classList.add(active);
     } else {
-      document.querySelector("#home-item")?.classList.remove("active");
+      document.querySelector(idName)?.classList.remove(active);
     }
-  }, [firstLoad]);
+  }, [firstLoad , active]);
 };
 
 export default useFirstLoad;

@@ -1,17 +1,18 @@
 "use client";
-import { useState ,  LegacyRef  } from "react";
+import { useState ,  LegacyRef , useEffect } from "react";
 import { allItemsRef } from "@/types/refTypes";
 import DefaultButton from "./buttons/DefaultButton";
 import data from "@/data/data";
 import handleClickNavItem from "@/utils/handleClickNavItem";
 import useFirstLoad from "@/hooks/useFirstLoad";
+import Image from "next/image";
 
 
 export default function Navbar(props : allItemsRef) {
 
   const [activeElem, setActiveElem] = useState<null | HTMLElement>(null);
   const [firstLoad , setFirstLoad]=useState(true)
-  useFirstLoad(firstLoad)
+  useFirstLoad(firstLoad , setFirstLoad ,"active" , "#home-item" )
 
   const toggleTheme = () => {
     document.documentElement.classList.toggle("dark");
@@ -19,26 +20,21 @@ export default function Navbar(props : allItemsRef) {
  
 
 
-  const icons = [
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M19 21H5C4.44772 21 4 20.5523 4 20V11L1 11L11.3273 1.6115C11.7087 1.26475 12.2913 1.26475 12.6727 1.6115L23 11L20 11V20C20 20.5523 19.5523 21 19 21ZM6 19H18V9.15745L12 3.7029L6 9.15745V19Z"></path></svg>,
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12.4142 5H21C21.5523 5 22 5.44772 22 6V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3H10.4142L12.4142 5ZM4 5V19H20V7H11.5858L9.58579 5H4ZM11 12H13V17H11V12ZM11 9H13V11H11V9Z"></path></svg>
-
-]
- 
-  
-
   return (
     <header className="lg:w-8/12 hidden lg:flex flex-col items-center lg:fixed right-4 2xl:right-10 z-50 ">
       <div className="flex justify-between items-center w-full">
         <ul className=" flex items-center container  lg:w-8/12   gap-x-4  xl:text-base 2xl:text-xl font-bold dark:[&>*]:bg-black  [&>*]:item-nav [&>*]:bg-slate-200  [&>*]:shadow-md ">
           {data.navBarItems.map(item=>
-              <li key={item.id} onClick={(event)=>handleClickNavItem(event.currentTarget , props[item.nameRef] as LegacyRef<HTMLDivElement> , setActiveElem , activeElem , setFirstLoad )}
-              className="transition-all duration-500 ease-in-out py-2 px-4 xl:py-3 xl:px-4 2xl:py-4 2xl:px-5 hidden xl:block">{item.navItem}</li>
+              <li id={item.id} key={item.id} onClick={(event)=>handleClickNavItem(event.currentTarget , props[item.nameRef] as LegacyRef<HTMLDivElement> , setActiveElem , activeElem , setFirstLoad , "active" )}
+              className="transition-all duration-500 ease-in-out py-2 px-4 xl:py-3 xl:px-4 2xl:py-4 2xl:px-5 hidden xl:block">{ item.navItem }</li>
             )}
 
               {data.iconNavbarItems.map(item=>
-              <li key={item.id} onClick={(event)=>handleClickNavItem(event.currentTarget , props[item.nameRef] as LegacyRef<HTMLDivElement> , setActiveElem , activeElem , setFirstLoad )}
-              className="transition-all duration-500 ease-in-out py-2 px-4 mr-4 xl:py-3   hidden lg:block xl:hidden">{item.navItem}</li>
+              <li  key={item.id} onClick={(event) => handleClickNavItem(event.currentTarget, props[item.nameRef] as LegacyRef<HTMLDivElement>, setActiveElem, activeElem, setFirstLoad , "active")}
+              className="transition-all duration-500 ease-in-out py-2 px-4 mr-4 xl:py-3 hidden lg:block xl:hidden"
+              >
+                <Image className="size-6" src={item.navItem} width={100} height={100} alt="image-icone"/>
+          </li>
             )}
         </ul>
         <div className=" hidden lg:flex h-max  lg:w-4/12  items-center gap-x-6 justify-end ">
