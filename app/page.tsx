@@ -26,7 +26,7 @@ export default function Home() {
       <AsideLeft />
       <Navbar {...allItemsRef}  />
       <Topics {...allItemsRef} />
-      <NavbarMobile/>
+      <NavbarMobile {...allItemsRef} />
     </main>
   );
 }
