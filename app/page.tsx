@@ -3,6 +3,7 @@ import { useRef , useState } from "react";
 import Navbar from "@/components/Navbar";
 import AsideLeft from "@/components/AsideLeft";
 import Topics from "@/components/Topics";
+import NavbarMobile from "@/components/NavbarMobile";
 
 
 export default function Home() {
@@ -25,6 +26,7 @@ export default function Home() {
       <AsideLeft />
       <Navbar {...allItemsRef}  />
       <Topics {...allItemsRef} />
+      <NavbarMobile/>
     </main>
   );
 }
