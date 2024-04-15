@@ -11,13 +11,13 @@ export default function NavbarMobile(props: allItemsRef) {
 
     const [activeElem, setActiveElem] = useState<null | HTMLElement>(null);
     const [firstLoad , setFirstLoad]=useState(false)
-    useFirstLoad(firstLoad , setFirstLoad ,"active-mobile-mode" , "#home-item-mobile")
     const [isDarkMode , setIsDarkMode]=useState<boolean>(false)
+    useFirstLoad(firstLoad , setFirstLoad ,"active-mobile-mode" , "#home-item-mobile")
 
   return (
     <div className=" h-20 w-full bottom-1 fixed flex justify-center items-center left-0 right-6 lg:hidden">
       <ul className=" dark:bg-[#111111] dark:shadow-md dark:border dark:border-pink-200 bg-purple-700 mx-6 w-96 h-10 z-50 rounded-full flex justify-around items-center shadow-md">
-        {data.iconNavbarItems.map((item) => (
+        {data.iconNavbarItemsMobileMode.map((item) => (
           <li
           id={item.id}
             className={`size-8 rounded-full flex items-center justify-center`}

@@ -1,9 +1,10 @@
 import { Dispatch, SetStateAction, LegacyRef } from "react";
 import handleScrollToView from "./handleScrollToView";
 
+
 const handleClickNavItem = async (
   element: HTMLElement,
-  nameRef: LegacyRef<HTMLDivElement>,
+  nameRef:  LegacyRef<HTMLDivElement>,
   setActiveElem: Dispatch<SetStateAction<HTMLElement | null>>,
   activeElem: HTMLElement | null,
   setFirstLoad: Dispatch<SetStateAction<boolean>>,

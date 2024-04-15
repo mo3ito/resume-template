@@ -16,7 +16,7 @@ export default function Navbar(props : allItemsRef) {
   const [firstLoad , setFirstLoad]=useState(true)
   const [isDarkMode , setIsDarkMode]=useState<boolean>(false)
   useFirstLoad(firstLoad , setFirstLoad ,"active" , "#home-item" )
-  // useFirstLoad(firstLoad , setFirstLoad ,"active-mobile-mode" , "#home-item-mobile")
+  useFirstLoad(firstLoad , setFirstLoad ,"active" , "#home-item-tablet")
 
 
   return (
@@ -28,11 +28,11 @@ export default function Navbar(props : allItemsRef) {
               className="transition-all duration-500 ease-in-out py-2 px-4 xl:py-3 xl:px-4 2xl:py-4 2xl:px-5 hidden xl:block">{ item.navItem }</li>
             )}
 
-              {data.iconNavbarItems.map(item=>
-              <li  key={item.id} onClick={(event) => handleClickNavItem(event.currentTarget, props[item.nameRef] as LegacyRef<HTMLDivElement>, setActiveElem, activeElem, setFirstLoad , "active")}
+            {data.iconNavbarItemsTabletMode.map(item=>
+            <li id={item.id} key={item.id} onClick={(event)=>handleClickNavItem(event.currentTarget , props[item.nameRef] as LegacyRef<HTMLDivElement> , setActiveElem , activeElem , setFirstLoad , "active" )}
               className="transition-all duration-500 ease-in-out py-2 px-4 mr-4 xl:py-3 hidden lg:block xl:hidden"
               >
-                <Image className="size-5" src={ isDarkMode ? item.navItem.dark : item.navItem.light } width={100} height={100} alt="image-icone"/>
+                <Image className="size-5" src={ !isDarkMode ? item.navItem.dark : item.navItem.light } width={100} height={100} alt="image-icone"/>
           </li>
             )}
         </ul>

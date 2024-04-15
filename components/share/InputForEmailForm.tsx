@@ -26,7 +26,7 @@ export default function InputForEmailForm({
         type={type}
         placeholder={placeholder}
         name={name}
-        className={`${classNameInput} dark:focus:border-pink-200 dark:border-zinc-600  font-bold outline-none focus:border-b-2 focus:border-purple-700 border-b-2 border-zinc-300  h-16 text-sm sm:text-base lg:text-xl bg-transparent`}
+        className={`${classNameInput} dark:focus:border-pink-200 dark:border-zinc-600  font-bold outline-none focus:border-b-2 focus:border-purple-700 border-b-2 border-zinc-300  h-16 text-sm sm:text-base lg:text-base xl:text-lg bg-transparent`}
       />
     </div>
   );

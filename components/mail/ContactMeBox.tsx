@@ -44,7 +44,7 @@ export default function ContactMeBox() {
         <textarea
           name="user-message"
           placeholder="a few words*"
-          className="dark:focus:border-pink-200 dark:border-zinc-600 resize-none font-bold outline-none focus:border-b-2 focus:border-purple-700 border-b-2 border-zinc-300 w-full text-sm sm:text-base lg:text-xl  bg-transparent h-36 overflow-auto"
+          className="dark:focus:border-pink-200 dark:border-zinc-600 resize-none font-bold outline-none focus:border-b-2 focus:border-purple-700 border-b-2 border-zinc-300 w-full text-sm sm:text-base lg:text-base xl:text-lg  bg-transparent h-36 overflow-auto"
         ></textarea>
       </div>
       <DefaultButton
