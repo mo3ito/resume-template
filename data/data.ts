@@ -17,11 +17,11 @@ navBarItems:[
     {id:uuid() , navItem:"Contact Me" , nameRef:"contactRef"},
 ],
 iconNavbarItems:[
-    { id: "home-item-mobile", navItem: "/icons/home.png" , nameRef: "homeRef" },
-    {id:uuid() , navItem:  "/icons/people.png", nameRef:"aboutMeRef"},
-    {id:uuid() , navItem:"/icons/four-squares-button-of-view-options.png" , nameRef:"portfolioRef"},
+    { id: "home-item-mobile", navItem:{dark:"/icons/home.png" , light: "/icons/home-light.png" }  , nameRef: "homeRef" },
+    {id:uuid() , navItem: {dark:"/icons/user.png" , light:"/icons/user-light.png"} , nameRef:"aboutMeRef"},
+    {id:uuid() , navItem:{ dark:"/icons/menu.png" , light:"/icons/menu-light.png"} , nameRef:"portfolioRef"},
     // {id:uuid() , navItem:3, nameRef:"resumeRef"},
-    {id:uuid() , navItem:"/icons/mail.png" , nameRef:"contactRef"},
+    {id:uuid() , navItem:{dark:"/icons/email.png", light:"/icons/email-light.png"} , nameRef:"contactRef"},
 ]
  }
 

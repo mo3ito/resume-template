@@ -6,22 +6,20 @@ import data from "@/data/data";
 import handleClickNavItem from "@/utils/handleClickNavItem";
 import useFirstLoad from "@/hooks/useFirstLoad";
 import Image from "next/image";
+import changeThemeHandler from "@/utils/changeThemeHandler";
 
 
 export default function Navbar(props : allItemsRef) {
 
   const [activeElem, setActiveElem] = useState<null | HTMLElement>(null);
   const [firstLoad , setFirstLoad]=useState(true)
+  const [isDarkMode , setIsDarkMode]=useState<boolean>(false)
   useFirstLoad(firstLoad , setFirstLoad ,"active" , "#home-item" )
-
-  const toggleTheme = () => {
-    document.documentElement.classList.toggle("dark");
-  };
- 
+  // useFirstLoad(firstLoad , setFirstLoad ,"active-mobile-mode" , "#home-item-mobile")
 
 
   return (
-    <header className="lg:w-8/12 hidden lg:flex flex-col items-center lg:fixed right-4 2xl:right-10 z-50 ">
+    <header className="lg:w-8/12 hidden lg:flex flex-col items-center lg:fixed right-4 2xl:right-10 z-50 font-josefinsSans ">
       <div className="flex justify-between items-center w-full">
         <ul className=" flex items-center container  lg:w-8/12   gap-x-4  xl:text-base 2xl:text-xl font-bold dark:[&>*]:bg-black  [&>*]:item-nav [&>*]:bg-slate-200  [&>*]:shadow-md ">
           {data.navBarItems.map(item=>
@@ -33,13 +31,13 @@ export default function Navbar(props : allItemsRef) {
               <li  key={item.id} onClick={(event) => handleClickNavItem(event.currentTarget, props[item.nameRef] as LegacyRef<HTMLDivElement>, setActiveElem, activeElem, setFirstLoad , "active")}
               className="transition-all duration-500 ease-in-out py-2 px-4 mr-4 xl:py-3 hidden lg:block xl:hidden"
               >
-                <Image className="size-6" src={item.navItem} width={100} height={100} alt="image-icone"/>
+                <Image className="size-5" src={ isDarkMode ? item.navItem.dark : item.navItem.light } width={100} height={100} alt="image-icone"/>
           </li>
             )}
         </ul>
         <div className=" hidden lg:flex h-max  lg:w-4/12  items-center gap-x-6 justify-end ">
           <button
-            onClick={toggleTheme}
+            onClick={()=>changeThemeHandler(setIsDarkMode)}
             className=" flex items-center justify-center  transition-opacity ease-in-out duration-500 [&>*]:theme-mode-icon p-2 rounded-full shadow-md dark:bg-black   size-max "
           >
             <svg
