@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import {  Josefin_Sans , Exo_2} from "next/font/google";
+import {  Exo_2 , Josefin_Sans} from "next/font/google";
 import "./globals.css";
 import MailModal from "@/components/mail/MailModal";
 import { Suspense } from "react";
@@ -8,13 +8,11 @@ import LoadingPage from "@/components/Loading";
 
 const exo2 = Exo_2({
   subsets: ['latin'],
-  display: 'swap',
   variable: '--font-exo2',
 })
 
 const josefinsSans = Josefin_Sans({
   subsets: ['latin'],
-  display: 'swap',
   variable: '--font-josefinsSans',
 })
  

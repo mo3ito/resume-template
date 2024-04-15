@@ -14,6 +14,9 @@ export default function NavbarMobile(props: allItemsRef) {
     const [isDarkMode , setIsDarkMode]=useState<boolean>(false)
     useFirstLoad(firstLoad , setFirstLoad ,"active-mobile-mode" , "#home-item-mobile")
 
+
+   
+    
   return (
     <div className=" h-20 w-full bottom-1 fixed flex justify-center items-center left-0 right-6 lg:hidden">
       <ul className=" dark:bg-[#111111] dark:shadow-md dark:border dark:border-pink-200 bg-purple-700 mx-6 w-96 h-10 z-50 rounded-full flex justify-around items-center shadow-md">

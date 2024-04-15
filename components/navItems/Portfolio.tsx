@@ -5,6 +5,7 @@ import ContainerShowBox from "../ContainerShowBox";
 import ShowBox from "../ShowBox";
 import Link from "next/link";
 import DiscribeProject from "../DiscribeProject";
+import data from "@/data/data";
 
 export default function Portfolio(props: PortfolioProps) {
   return (
@@ -12,8 +13,8 @@ export default function Portfolio(props: PortfolioProps) {
       <Introducer keyWords="Portfolio" header="Frontend Developer" />
 
       <ContainerShowBox>
-        <ShowBox contentValue="Years of experience" value="+2" />
-        <ShowBox contentValue="Projects done" value="+5" />
+        <ShowBox contentValue="Years of experience" value={data.yearsExperience} />
+        <ShowBox contentValue="Projects done" value={data.projectDone} />
       </ContainerShowBox>
 
       <div className=" text-base md:text-lg:text-xl">

@@ -9,6 +9,8 @@ instagram:"https://www.instagram.com/mo3ito",
 telegram: "https://www.t.me/mo3ito",
 specialization:"Frontend Developer",
 skills: "Html5, css3, JavaScript, TypeScript, React, Next.js, Tailwindcss, Redux, Node.js, MongoDB, Rest Api, Npm, Git, Responsive Design ,Linux",
+yearsExperience:"+2",
+projectDone:"+5",
 navBarItems:[
     {id:"home-item" , navItem:"Home" , nameRef:"homeRef"},
     {id:uuid() , navItem:"About Me" , nameRef:"aboutMeRef"},
