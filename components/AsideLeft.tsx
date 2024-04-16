@@ -53,7 +53,7 @@ export default function AsideLeft() {
           
         </div>
           <DefaultButton classNameContent='text-base sm:text-xl lg:text-lg 2xl:text-xl' isLinkTag={true} className="w-full mt-4 h-12 sm:h-14 lg:h-12 xl:h- 2xl:h-16" content="Email"  href="?modal=true">
-          <svg className=' size-5 md:size-7 lg:size-5 xl:size-6 2xl:size-7 inline-block ml-2 -translate-y-1' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M3 3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3ZM20 7.23792L12.0718 14.338L4 7.21594V19H20V7.23792ZM4.51146 5L12.0619 11.662L19.501 5H4.51146Z"></path></svg>
+          <svg className=' size-5 sm:size-6 md:size-7 lg:size-5 xl:size-6 2xl:size-7 inline-block ml-2 -translate-y-1' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M3 3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3ZM20 7.23792L12.0718 14.338L4 7.21594V19H20V7.23792ZM4.51146 5L12.0619 11.662L19.501 5H4.51146Z"></path></svg>
           </DefaultButton>
 
       </section>
