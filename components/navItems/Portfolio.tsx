@@ -21,12 +21,16 @@ export default function Portfolio(props: PortfolioProps) {
         <h1 className="font-bold text-2xl mb-4 text-purple-700 dark:text-pink-200 ">
           my projects
         </h1>
-        <DiscribeProject
-          projectName="Siraf"
-          descriptionProject="The Siraf site is an application for buying and selling, renting and consulting in the field of real estate, which is coded with the next.js framework, and I have worked as a frontend developer in its programming team."
-          linkProject="https://siraf.app/"
-        />
-        <DiscribeProject
+        {data.project.map(item=>
+                <DiscribeProject
+                projectName={item.projectName}
+                descriptionProject={item.descriptionProject}
+                linkProject={item.linkProject}
+                githubLink={item?.githubLink}
+              />
+          )}
+
+        {/* <DiscribeProject
           projectName="eyeRoll"
           githubLink={
             <>
@@ -44,7 +48,7 @@ export default function Portfolio(props: PortfolioProps) {
           Its frontend programming language is typescript and next.js framework, and I have used libraries such as swiper, moment, recharts, react-query, react-toastify, react-datepicker, axios, JWT, tailwindcss, etc.
           for backend I developed the project with node.js and used express, socket.io, JWT, nodemailer, moment, multer, etc. libraries."
           linkProject="https://eyerol.com/"
-        />
+        /> */}
       </div>
     </div>
   );

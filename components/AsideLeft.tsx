@@ -1,5 +1,5 @@
 import React from 'react'
-import DefaultButton from './buttons/DefaultButton'
+import DefaultButton from './share/buttons/DefaultButton'
 import Link from 'next/link'
 import data from '@/data/data'
 import Image from 'next/image'
@@ -14,13 +14,7 @@ export default function AsideLeft() {
     </div>
     <h1 className=' text-lg sm:text-2xl lg:text-lg xl:text-2xl font-bold'>{data.name} <br/> {data.lastName}</h1>
     </section>
-    
-    {/* <img className='rounded-[30px] shadow-md ' src="mo3ito.jpg" alt="mo3ito-image" /> */}
-   
     <Image className='size-full rounded-3xl' src="/mo3ito.jpg" width={100} height={100} alt='mo3ito image'/>
-    
-    
-
       <section className='my-3'>
         <h3 className=' text-base sm:text-lg md:text-xl lg:text-base xl:text-xl'  >Specialization:</h3>
         <p className='dark:text-zinc-300 text-black text-base  md:text-xl lg:text-base xl:text-xl font-semibold'>{data.specialization}</p>
@@ -49,8 +43,6 @@ export default function AsideLeft() {
           <Link href={data.github} className='link-social-media   p-[5px] rounded-[13px] sm:p-[10px] lg:p-2 xl:p-[10px] sm:rounded-[18px]'>
           <svg className='size-5 sm:size-6 dark:fill-white fill-black' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" ><path d="M12.001 20C16.4193 20 20.001 16.4183 20.001 12C20.001 7.58172 16.4193 4 12.001 4C7.5827 4 4.00098 7.58172 4.00098 12C4.00098 16.4183 7.5827 20 12.001 20ZM12.001 22C6.47813 22 2.00098 17.5228 2.00098 12C2.00098 6.47715 6.47813 2 12.001 2C17.5238 2 22.001 6.47715 22.001 12C22.001 17.5228 17.5238 22 12.001 22ZM8.89113 13.1708L6.39308 12.3911C5.85317 12.2255 5.84996 11.854 6.51397 11.5871L16.247 7.82754C16.8115 7.59644 17.1325 7.88842 16.9495 8.61641L15.2917 16.4377C15.1763 16.9941 14.8407 17.1266 14.3759 16.8698L11.825 14.9823L10.6361 16.1297C10.5139 16.2476 10.4145 16.3489 10.2273 16.3743C10.04 16.3996 9.88564 16.3442 9.77337 16.0337L8.90378 13.1628L8.89113 13.1708Z"></path></svg>
           </Link>
-
-          
         </div>
           <DefaultButton classNameContent='text-base sm:text-xl lg:text-lg 2xl:text-xl' isLinkTag={true} className="w-full mt-4 h-12 sm:h-14 lg:h-12 xl:h- 2xl:h-16" content="Email"  href="?modal=true">
           <svg className=' size-5 sm:size-6 md:size-7 lg:size-5 xl:size-6 2xl:size-7 inline-block ml-2 -translate-y-1' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M3 3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3ZM20 7.23792L12.0718 14.338L4 7.21594V19H20V7.23792ZM4.51146 5L12.0619 11.662L19.501 5H4.51146Z"></path></svg>

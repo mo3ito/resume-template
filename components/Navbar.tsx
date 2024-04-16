@@ -1,7 +1,7 @@
 "use client";
 import { useState , useContext , LegacyRef } from "react";
 import { allItemsRef } from "@/types/refTypes";
-import DefaultButton from "./buttons/DefaultButton";
+import DefaultButton from "./share/buttons/DefaultButton";
 import data from "@/data/data";
 import handleClickNavItem from "@/utils/handleClickNavItem";
 import useFirstLoad from "@/hooks/useFirstLoad";
