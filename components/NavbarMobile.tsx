@@ -1,4 +1,4 @@
-import React, { useState , useEffect} from "react";
+import React, { useState , useContext} from "react";
 import data from "@/data/data";
 import handleClickNavItem from "@/utils/handleClickNavItem";
 import useFirstLoad from "@/hooks/useFirstLoad";
@@ -6,17 +6,15 @@ import { allItemsRef } from "@/types/refTypes";
 import Image from "next/image";
 import changeThemeHandler from "@/utils/changeThemeHandler";
 import ChangeModeButton from "./share/ChangeModeButton";
+import { DarkModeContext } from "@/context/DarkMode";
 
 export default function NavbarMobile(props: allItemsRef) {
 
     const [activeElem, setActiveElem] = useState<null | HTMLElement>(null);
     const [firstLoad , setFirstLoad]=useState(false)
-    const [isDarkMode , setIsDarkMode]=useState<boolean>(false)
     useFirstLoad(firstLoad , setFirstLoad ,"active-mobile-mode" , "#home-item-mobile")
+    const {isDarkMode , setIsDarkMode}=useContext(DarkModeContext)
 
-
-   
-    
   return (
     <div className=" h-20 w-full bottom-1 fixed flex justify-center items-center left-0 right-6 lg:hidden">
       <ul className=" dark:bg-[#111111] dark:shadow-md dark:border dark:border-pink-200 bg-purple-700 mx-6 w-96 h-10 z-50 rounded-full flex justify-around items-center shadow-md">

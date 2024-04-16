@@ -13,21 +13,21 @@ yearsExperience:"+2",
 projectDone:"+5",
 navBarItems:[
     {id:"home-item" , navItem:"Home" , nameRef:"homeRef"},
-    {id:uuid() , navItem:"About Me" , nameRef:"aboutMeRef"},
-    {id:uuid() , navItem:"Portfolio" , nameRef:"portfolioRef"},
-    {id:uuid() , navItem:"Contact Me" , nameRef:"contactRef"},
+    {id:"about-item" , navItem:"About Me" , nameRef:"aboutMeRef"},
+    {id:"portfolio-item" , navItem:"Portfolio" , nameRef:"portfolioRef"},
+    {id:"contact-item" , navItem:"Contact Me" , nameRef:"contactRef"},
 ],
 iconNavbarItemsTabletMode:[
     { id: "home-item-tablet", navItem:{light:"/icons/home.png" , dark: "/icons/home-light.png" }  , nameRef: "homeRef" },
-    {id:uuid() , navItem: {light:"/icons/user.png" , dark :"/icons/user-dark.png"} , nameRef:"aboutMeRef"},
-    {id:uuid() , navItem:{ light:"/icons/menu.png" , dark:"/icons/menu-dark.png"} , nameRef:"portfolioRef"},
-    {id:uuid() , navItem:{light:"/icons/email.png", dark:"/icons/email-dark.png"} , nameRef:"contactRef"},
+    {id:"about-item-tablet"  , navItem: {light:"/icons/user.png" , dark :"/icons/user-dark.png"} , nameRef:"aboutMeRef"},
+    {id:"portfolio-item-tablet" , navItem:{ light:"/icons/menu.png" , dark:"/icons/menu-dark.png"} , nameRef:"portfolioRef"},
+    {id:"contact-item-tablet", navItem:{light:"/icons/email.png", dark:"/icons/email-dark.png"} , nameRef:"contactRef"},
 ],
 iconNavbarItemsMobileMode:[
     { id: "home-item-mobile", navItem:{light:"/icons/home.png" , dark: "/icons/home-light.png" }  , nameRef: "homeRef" },
-    {id:uuid() , navItem: {light:"/icons/user.png" , dark :"/icons/user-dark.png"} , nameRef:"aboutMeRef"},
-    {id:uuid() , navItem:{ light:"/icons/menu.png" , dark:"/icons/menu-dark.png"} , nameRef:"portfolioRef"},
-    {id:uuid() , navItem:{light:"/icons/email.png", dark:"/icons/email-dark.png"} , nameRef:"contactRef"},
+    {id:"about-item-mobile" , navItem: {light:"/icons/user.png" , dark :"/icons/user-dark.png"} , nameRef:"aboutMeRef"},
+    { id:"portfolio-item-mobile", navItem:{ light:"/icons/menu.png" , dark:"/icons/menu-dark.png"} , nameRef:"portfolioRef"},
+    {id:"contact-item-moblie" , navItem:{light:"/icons/email.png", dark:"/icons/email-dark.png"} , nameRef:"contactRef"},
 ]
  }
 

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import {  Exo_2 , Josefin_Sans} from "next/font/google";
 import "./globals.css";
+import DarkModeProvider from "@/context/DarkMode";
 import MailModal from "@/components/mail/MailModal";
 import { Suspense } from "react";
 import ToastifyContainer from "@/components/providers/ToastifyContainer";
@@ -28,6 +29,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
+    <DarkModeProvider>
     <html lang="en">
       <body  className={` ${josefinsSans.variable} ${exo2.variable} font-josefinsSans h-max w-full bg-slate-200 dark:bg-black overflow-y-scroll text-zinc-600 dark:text-zinc-300`}>
         {children}
@@ -37,5 +39,6 @@ export default function RootLayout({
         <ToastifyContainer/>
         </body>
     </html>
+    </DarkModeProvider>
   );
 }

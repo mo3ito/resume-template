@@ -1,5 +1,5 @@
 "use client";
-import { useState ,  LegacyRef , useEffect } from "react";
+import { useState ,  LegacyRef , useEffect, useContext } from "react";
 import { allItemsRef } from "@/types/refTypes";
 import DefaultButton from "./buttons/DefaultButton";
 import data from "@/data/data";
@@ -8,16 +8,24 @@ import useFirstLoad from "@/hooks/useFirstLoad";
 import Image from "next/image";
 import changeThemeHandler from "@/utils/changeThemeHandler";
 import ChangeModeButton from "./share/ChangeModeButton";
+import LoadingPage from "./Loading";
+import { DarkModeContext } from "@/context/DarkMode";
 
 
 export default function Navbar(props : allItemsRef) {
 
   const [activeElem, setActiveElem] = useState<null | HTMLElement>(null);
   const [firstLoad , setFirstLoad]=useState(true)
-  const [isDarkMode , setIsDarkMode]=useState<boolean>(false)
+  const {isDarkMode , setIsDarkMode}=useContext(DarkModeContext)
   useFirstLoad(firstLoad , setFirstLoad ,"active" , "#home-item" )
   useFirstLoad(firstLoad , setFirstLoad ,"active" , "#home-item-tablet")
 
+  console.log("navbar darkMode",isDarkMode);
+  
+
+  if(!data){
+    return <LoadingPage/>
+  }
 
   return (
     <header className="lg:w-8/12 hidden lg:flex flex-col items-center lg:fixed right-4 2xl:right-10 z-50 font-josefinsSans ">
