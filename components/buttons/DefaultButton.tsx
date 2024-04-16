@@ -4,7 +4,7 @@ import { Url } from 'next/dist/shared/lib/router/router';
 
 type DefaultButtonProps = {
   content: string;
-  classNameContent:string;
+  classNameContent?:string;
   children: React.ReactNode;
   className?:string;
   href?:Url;

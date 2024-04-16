@@ -1,5 +1,5 @@
 "use client";
-import { useState ,  LegacyRef , useEffect, useContext } from "react";
+import { useState , useContext , LegacyRef } from "react";
 import { allItemsRef } from "@/types/refTypes";
 import DefaultButton from "./buttons/DefaultButton";
 import data from "@/data/data";
@@ -8,7 +8,6 @@ import useFirstLoad from "@/hooks/useFirstLoad";
 import Image from "next/image";
 import changeThemeHandler from "@/utils/changeThemeHandler";
 import ChangeModeButton from "./share/ChangeModeButton";
-import LoadingPage from "./Loading";
 import { DarkModeContext } from "@/context/DarkMode";
 
 
@@ -20,12 +19,6 @@ export default function Navbar(props : allItemsRef) {
   useFirstLoad(firstLoad , setFirstLoad ,"active" , "#home-item" )
   useFirstLoad(firstLoad , setFirstLoad ,"active" , "#home-item-tablet")
 
-  console.log("navbar darkMode",isDarkMode);
-  
-
-  if(!data){
-    return <LoadingPage/>
-  }
 
   return (
     <header className="lg:w-8/12 hidden lg:flex flex-col items-center lg:fixed right-4 2xl:right-10 z-50 font-josefinsSans ">
@@ -37,7 +30,7 @@ export default function Navbar(props : allItemsRef) {
             )}
 
             {data.iconNavbarItemsTabletMode.map(item=>
-            <li id={item.id} key={item.id} onClick={(event)=>handleClickNavItem(event.currentTarget , props[item.nameRef] as LegacyRef<HTMLDivElement> , setActiveElem , activeElem , setFirstLoad , "active" )}
+            <li id={item.id} key={item.id} onClick={(event)=>handleClickNavItem(event.currentTarget , props[item.nameRef] as LegacyRef<HTMLDivElement>, setActiveElem , activeElem , setFirstLoad , "active" )}
               className="transition-all duration-500 ease-in-out py-2 px-4 mr-4 xl:py-3 hidden lg:block xl:hidden"
               >
                 <Image className="size-5" src={ !isDarkMode ? item.navItem.dark : item.navItem.light } width={100} height={100} alt="image-icone"/>

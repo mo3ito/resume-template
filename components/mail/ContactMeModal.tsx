@@ -37,7 +37,7 @@ export const ContactMeModal = () => {
       <DefaultButton
         isLoading={isLoadingForResponse}
         content="send"
-        className="w-full text-white dark:text-black h-16"
+        className="w-full text-white dark:text-black max-[400px]:h-12 h-16"
       >
         <svg
           className="size-6 inline-block  ml-2 fill-white dark:fill-black"
