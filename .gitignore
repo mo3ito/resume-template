@@ -37,4 +37,4 @@ next-env.d.ts
 
 
 # sendMailHandler
-/utils/sendMailHandler.tsx
+# /utils/sendMailHandler.tsx
