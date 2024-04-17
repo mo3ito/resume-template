@@ -2,6 +2,7 @@ import React, { ReactNode } from "react";
 import Link from "next/link";
 
 type DiscribeProjectProps = {
+  id:string;
   projectName: string;
   descriptionProject: string;
   linkProject: string;
@@ -9,13 +10,14 @@ type DiscribeProjectProps = {
 };
 
 export default function DiscribeProject({
+  id,
   projectName,
   descriptionProject,
   linkProject,
   githubLink,
 }: DiscribeProjectProps) {
   return (
-    <div className=" mb-8 ">
+    <div key={id} className=" mb-8 ">
       <p className="">
         <span className="  font-bold inline-block text-lg sm:text-xl xl:text-2xl">
           {projectName}:

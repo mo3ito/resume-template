@@ -21,7 +21,7 @@ const data = {
   iconNavbarItemsTabletMode: [
     {
       id: "home-item-tablet",
-      navItem: { light: "/icons/home.png", dark: "/icons/home-light.png" },
+      navItem: { light: "/icons/home.png", dark: "/icons/home-dark.png" },
       nameRef: "homeRef",
     },
     {
@@ -43,7 +43,7 @@ const data = {
   iconNavbarItemsMobileMode: [
     {
       id: "home-item-mobile",
-      navItem: { light: "/icons/home.png", dark: "/icons/home-light.png" },
+      navItem: { light: "/icons/home.png", dark: "/icons/home-dark.png" },
       nameRef: "homeRef",
     },
     {

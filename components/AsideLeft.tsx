@@ -14,7 +14,7 @@ export default function AsideLeft() {
     </div>
     <h1 className=' text-lg sm:text-2xl lg:text-lg xl:text-2xl font-bold'>{data.name} <br/> {data.lastName}</h1>
     </section>
-    <Image className='size-full rounded-3xl' src="/mo3ito.jpg" width={100} height={100} alt='mo3ito image'/>
+    <img className='size-full rounded-3xl' src="/mo3ito.jpg" width={100} height={100} alt='mo3ito image'/>
       <section className='my-3'>
         <h3 className=' text-base sm:text-lg md:text-xl lg:text-base xl:text-xl'  >Specialization:</h3>
         <p className='dark:text-zinc-300 text-black text-base  md:text-xl lg:text-base xl:text-xl font-semibold'>{data.specialization}</p>
