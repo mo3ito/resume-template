@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import {  Exo_2 , Josefin_Sans} from "next/font/google";
+import {  Exo_2 , Josefin_Sans ,  Jost } from "next/font/google";
 import "./globals.css";
 import DarkModeProvider from "@/context/DarkMode";
 import MailModal from "@/components/mail/MailModal";
@@ -12,7 +12,7 @@ const exo2 = Exo_2({
   variable: '--font-exo2',
 })
 
-const josefinsSans = Josefin_Sans({
+const josefinsSans = Jost({
   subsets: ['latin'],
   variable: '--font-josefinsSans',
 })

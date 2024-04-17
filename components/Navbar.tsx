@@ -21,7 +21,7 @@ export default function Navbar(props : allItemsRef) {
 
 
   return (
-    <header className="lg:w-8/12 hidden lg:flex flex-col items-center lg:fixed right-4 2xl:right-10 z-50 font-josefinsSans ">
+    <header className="lg:w-8/12 hidden lg:flex flex-col items-center lg:fixed right-4 2xl:right-10 z-50 font-josefinsSans lg:top-8 ">
       <div className="flex justify-between items-center w-full">
         <ul className=" flex items-center container  lg:w-8/12   gap-x-4  xl:text-base 2xl:text-xl font-bold dark:[&>*]:bg-black  [&>*]:item-nav [&>*]:bg-slate-200  [&>*]:shadow-md ">
           {data.navBarItems.map(item=>
