@@ -3,7 +3,6 @@ import { PortfolioProps } from "@/types/refTypes";
 import Introducer from "../Introducer";
 import ContainerShowBox from "../ContainerShowBox";
 import ShowBox from "../ShowBox";
-import Link from "next/link";
 import DiscribeProject from "../DiscribeProject";
 import data from "@/data/data";
 

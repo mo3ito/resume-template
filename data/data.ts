@@ -83,7 +83,7 @@ const data = {
         projectName: "Resume Template",
         descriptionProject:" A site template (the same site you are viewing) has two modes, dark mode and light mode that I have developed with Typescript language and Next.js framework and I have used tailwindcss framework for CSS and I have used libraries such as react-toastify, email.js and etc libraries.",
         githubLink:"https://github.com/mo3ito/resume" ,
-        linkProject : " https://eyerol.com/"
+        linkProject : " https://mostafa-entezami.dev"
       },
   ],
 };

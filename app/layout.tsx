@@ -19,7 +19,7 @@ const josefinsSans = Josefin_Sans({
  
 
 export const metadata: Metadata = {
-  title: "mostafa entezami",
+  title: "Mostafa Entezami",
   description: "Html5, css3, JavaScript, TypeScript, React, Next.js, Tailwindcss, Redux, Node.js, MongoDB, Rest Api, Npm, Git, Responsive Design ,Linux",
 };
 
