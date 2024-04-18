@@ -21,7 +21,7 @@ export default function AsideLeft() {
       </section>
 
       <section className='mb-3 '>
-        <h3 className=' text-base sm:text-lg md:text-xl lg:text-lg xl:text-xl'  >skills:</h3>
+        <h3 className=' text-base sm:text-lg md:text-xl lg:text-lg xl:text-xl'  >Skills:</h3>
         <p className='dark:text-zinc-300 text-black font-semibold text-sm sm:text-lg lg:text-base xl:text-lg'>{data.skills}</p>
       </section>
 

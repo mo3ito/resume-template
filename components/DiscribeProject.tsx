@@ -1,4 +1,4 @@
-import React, { ReactNode } from "react";
+import React from "react";
 import Link from "next/link";
 
 type DiscribeProjectProps = {
@@ -19,7 +19,7 @@ export default function DiscribeProject({
   return (
     <div key={id} className=" mb-8 ">
       <p className="">
-        <span className="  font-bold inline-block text-lg sm:text-xl xl:text-2xl">
+        <span className="font-bold inline-block text-lg sm:text-xl xl:text-2xl">
           {projectName}:
         </span>
         <span className=" text-base sm:text-lg  xl:text-xl">
