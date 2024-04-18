@@ -1,4 +1,3 @@
-import { v4 as uuid } from "uuid";
 
 const data = {
   name: "Mostafa",
@@ -81,30 +80,12 @@ const data = {
       {
         id: "project-3",
         projectName: "Resume Template",
-        descriptionProject:" A site template (the same site you are viewing) has two modes, dark mode and light mode that I have developed with Typescript language and Next.js framework and I have used Tailwindcss framework for CSS and I have used libraries such as React-toastify, Email.js and etc libraries.",
+        descriptionProject:" A site template (the same site you are viewing) has two modes, dark mode and light mode that I have developed with Typescript language and Next.js framework and I have used Tailwindcss framework for Css and I have used libraries such as React-toastify, Email.js and etc libraries.",
         githubLink:"https://github.com/mo3ito/resume" ,
-        linkProject : " https://mostafa-entezami.dev"
+        linkProject : " https://mostafa-entezami.dev/"
       },
   ],
 };
 
-// <DiscribeProject
 
-// githubLink={
-//   <>
-//     <Link href="https://github.com/mo3ito/eyeRoll-frontend">
-//       https://github.com/mo3ito/eyeRoll-frontend
-//     </Link>{" "}
-//     <br />{" "}
-//     <Link href="https://github.com/mo3ito/eyeRoll-backend">
-//       https://github.com/mo3ito/eyeRoll-backend
-//     </Link>
-//   </>
-// }
-// descriptionProject="It is a startup application in the field of discount, advertisement and online menu, which is an idea of ​​mine.
-// This application creates an identity card for each business.
-// Its frontend programming language is typescript and next.js framework, and I have used libraries such as swiper, moment, recharts, react-query, react-toastify, react-datepicker, axios, JWT, tailwindcss, etc.
-// for backend I developed the project with node.js and used express, socket.io, JWT, nodemailer, moment, multer, etc. libraries."
-// linkProject="https://eyerol.com/"
-// />
 export default data;
