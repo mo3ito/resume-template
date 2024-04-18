@@ -12,7 +12,7 @@ const data = {
   yearsExperience: "+2",
   projectDone: "+5",
   homeIntroduce:"My journey into coding began with a fascination for problem-solving – a passion that continues to fuel my endeavors today. I've always been averse to routine and passionate about creating. One of the main reasons for my interest in programming and technology is creating websites and apps that make life easier. Whether it's architecting elegant solutions to intricate UI/UX dilemmas or optimizing performance through ingenious coding techniques, I approach each task with an unwavering commitment to excellence. I'm constantly enamored with learning and improving myself, implementing projects with the latest methods.",
-  aboutMe:"I graduated with associate degree in Electrical engineering. I worked as a Frontend Developer at Fekrbaker Siraf, a registered company in the Science and Technology Park, specializing in real estate, for a duration of 5 months. In addition, I have been involved in other projects, including a startup project called eyeRoll, where I served as an idea developer and a full-stack MERN developer.",
+  aboutMe:"I graduated with associate degree in Electrical engineering. I worked as a Frontend Developer at Fekrebekr Siraf, a registered company in the Science and Technology Park, specializing in real estate, for a duration of 5 months. In addition, I have been involved in other projects, including a startup project called eyeRoll, where I served as an idea developer and a full-stack MERN developer.",
   navBarItems: [
     { id: "home-item", navItem: "Home", nameRef: "homeRef" },
     { id: "about-item", navItem: "About Me", nameRef: "aboutMeRef" },
