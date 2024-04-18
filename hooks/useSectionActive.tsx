@@ -27,7 +27,7 @@ const useSectionActive = (props : allItemsRef)=>{
   
     })
 
-    return {activeElemIdName , setActiveElemIdName}
+    return {activeElemIdName }
 }
 
 export default useSectionActive;

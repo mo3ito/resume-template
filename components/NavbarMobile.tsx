@@ -1,7 +1,6 @@
 import React, { useState , useContext , LegacyRef} from "react";
 import data from "@/data/data";
 import handleClickNavItem from "@/utils/handleClickNavItem";
-import useFirstLoad from "@/hooks/useFirstLoad";
 import { allItemsRef } from "@/types/refTypes";
 import Image from "next/image";
 import changeThemeHandler from "@/utils/changeThemeHandler";
@@ -12,10 +11,8 @@ import useSectionActive from "@/hooks/useSectionActive";
 export default function NavbarMobile(props: allItemsRef) {
 
     const [activeElem, setActiveElem] = useState<null | HTMLElement>(null);
-    const [firstLoad , setFirstLoad]=useState(false)
-    // useFirstLoad(firstLoad , setFirstLoad ,"active-mobile-mode" , "#home-item-mobile")
     const {isDarkMode , setIsDarkMode}=useContext(DarkModeContext)
-    const {activeElemIdName , setActiveElemIdName} = useSectionActive(props)
+    const {activeElemIdName } = useSectionActive(props)
     
 
   return (

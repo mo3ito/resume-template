@@ -4,7 +4,6 @@ import { allItemsRef } from "@/types/refTypes";
 import DefaultButton from "./share/buttons/DefaultButton";
 import data from "@/data/data";
 import handleClickNavItem from "@/utils/handleClickNavItem";
-import useFirstLoad from "@/hooks/useFirstLoad";
 import Image from "next/image";
 import changeThemeHandler from "@/utils/changeThemeHandler";
 import ChangeModeButton from "./share/ChangeModeButton";
@@ -14,37 +13,10 @@ import useSectionActive from "@/hooks/useSectionActive";
 export default function Navbar(props : allItemsRef) {
 
   const [activeElem, setActiveElem] = useState<null | HTMLElement>(null);
-  // const [firstLoad , setFirstLoad]=useState(true)
+
   const {isDarkMode , setIsDarkMode}=useContext(DarkModeContext)
-  const {activeElemIdName , setActiveElemIdName} = useSectionActive(props)
-  // useFirstLoad(firstLoad , setFirstLoad ,"active" , "#home-item" )
-  // useFirstLoad(firstLoad , setFirstLoad ,"active" , "#home-item-tablet")
+  const {activeElemIdName} = useSectionActive(props)
 
-  // const [activeElem , setActiveElem]=useState(["home-item" , "home-item-tablet"])
-
-  // useEffect(()=>{
-
-   
-  //     const sectionHandler = ()=>{
-  //       if(props){
-  //         if (window.scrollY >= props.contactRef?.current.offsetTop){
-  //           setActiveElem(["contact-item" , "contact-item-tablet"])
-  //         } else if (window.scrollY >= props.portfolioRef?.current.offsetTop){
-  //           setActiveElem(["portfolio-item","portfolio-item-tablet"])
-  //         }  else if (window.scrollY >= props.aboutMeRef?.current.offsetTop){
-  //           setActiveElem(["about-item","about-item-tablet"])
-  //         }else{
-  //           setActiveElem(["home-item","home-item-tablet"])
-  //         }
-  //       }
-  //     }
-  //   window.addEventListener("scroll", sectionHandler)
-
-  //   return ()=>{
-  //     window.removeEventListener("scroll", sectionHandler)
-  //   }
-
-  // })
 
   return (
     <header className="lg:w-8/12 hidden lg:flex flex-col items-center lg:fixed right-4 2xl:right-10 z-50 font-josefinsSans lg:top-8 ">
