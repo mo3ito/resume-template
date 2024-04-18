@@ -1,5 +1,5 @@
 "use client";
-import { useState , useContext , LegacyRef } from "react";
+import { useState , useContext , LegacyRef , useEffect } from "react";
 import { allItemsRef } from "@/types/refTypes";
 import DefaultButton from "./share/buttons/DefaultButton";
 import data from "@/data/data";
@@ -9,29 +9,55 @@ import Image from "next/image";
 import changeThemeHandler from "@/utils/changeThemeHandler";
 import ChangeModeButton from "./share/ChangeModeButton";
 import { DarkModeContext } from "@/context/DarkMode";
-
+import useSectionActive from "@/hooks/useSectionActive";
 
 export default function Navbar(props : allItemsRef) {
 
   const [activeElem, setActiveElem] = useState<null | HTMLElement>(null);
-  const [firstLoad , setFirstLoad]=useState(true)
+  // const [firstLoad , setFirstLoad]=useState(true)
   const {isDarkMode , setIsDarkMode}=useContext(DarkModeContext)
-  useFirstLoad(firstLoad , setFirstLoad ,"active" , "#home-item" )
-  useFirstLoad(firstLoad , setFirstLoad ,"active" , "#home-item-tablet")
+  const {activeElemIdName , setActiveElemIdName} = useSectionActive(props)
+  // useFirstLoad(firstLoad , setFirstLoad ,"active" , "#home-item" )
+  // useFirstLoad(firstLoad , setFirstLoad ,"active" , "#home-item-tablet")
 
+  // const [activeElem , setActiveElem]=useState(["home-item" , "home-item-tablet"])
+
+  // useEffect(()=>{
+
+   
+  //     const sectionHandler = ()=>{
+  //       if(props){
+  //         if (window.scrollY >= props.contactRef?.current.offsetTop){
+  //           setActiveElem(["contact-item" , "contact-item-tablet"])
+  //         } else if (window.scrollY >= props.portfolioRef?.current.offsetTop){
+  //           setActiveElem(["portfolio-item","portfolio-item-tablet"])
+  //         }  else if (window.scrollY >= props.aboutMeRef?.current.offsetTop){
+  //           setActiveElem(["about-item","about-item-tablet"])
+  //         }else{
+  //           setActiveElem(["home-item","home-item-tablet"])
+  //         }
+  //       }
+  //     }
+  //   window.addEventListener("scroll", sectionHandler)
+
+  //   return ()=>{
+  //     window.removeEventListener("scroll", sectionHandler)
+  //   }
+
+  // })
 
   return (
     <header className="lg:w-8/12 hidden lg:flex flex-col items-center lg:fixed right-4 2xl:right-10 z-50 font-josefinsSans lg:top-8 ">
       <div className="flex justify-between items-center w-full">
         <ul className=" flex items-center container  lg:w-8/12   gap-x-4  xl:text-base 2xl:text-xl font-bold dark:[&>*]:bg-black  [&>*]:item-nav [&>*]:bg-slate-200  [&>*]:shadow-md ">
           {data.navBarItems.map(item=>
-              <li id={item.id} key={item.id} onClick={(event)=>handleClickNavItem(event.currentTarget , props[item.nameRef] as LegacyRef<HTMLDivElement> , setActiveElem , activeElem , setFirstLoad , "active" )}
-              className="transition-all duration-500 ease-in-out py-2 px-4 xl:py-3 xl:px-4 2xl:py-4 2xl:px-5 hidden xl:block">{ item.navItem }</li>
+              <li id={item.id} key={item.id} onClick={(event)=>handleClickNavItem(event.currentTarget , props[item.nameRef] as LegacyRef<HTMLDivElement> , setActiveElem , activeElem  , "active" )}
+              className={` ${item.id === activeElemIdName[0] && 'active'} transition-all duration-500 ease-in-out py-2 px-4 xl:py-3 xl:px-4 2xl:py-4 2xl:px-5 hidden xl:block `}>{ item.navItem }</li>
             )}
 
             {data.iconNavbarItemsTabletMode.map(item=>
-            <li id={item.id} key={item.id} onClick={(event)=>handleClickNavItem(event.currentTarget , props[item.nameRef] as LegacyRef<HTMLDivElement>, setActiveElem , activeElem , setFirstLoad , "active" )}
-              className="transition-all duration-500 ease-in-out py-2 px-4 mr-4 xl:py-3 hidden lg:block xl:hidden"
+            <li id={item.id} key={item.id} onClick={(event)=>handleClickNavItem(event.currentTarget , props[item.nameRef] as LegacyRef<HTMLDivElement>, setActiveElem , activeElem , "active" )}
+              className={`${item.id === activeElemIdName[1] && 'active'} transition-all duration-500 ease-in-out py-2 px-4 mr-4 xl:py-3 hidden lg:block xl:hidden`}
               >
                 <Image className="size-5" src={ !isDarkMode ? item.navItem.dark : item.navItem.light } width={100} height={100} alt="image-icone"/>
           </li>

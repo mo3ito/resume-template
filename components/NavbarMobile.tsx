@@ -7,13 +7,16 @@ import Image from "next/image";
 import changeThemeHandler from "@/utils/changeThemeHandler";
 import ChangeModeButton from "./share/ChangeModeButton";
 import { DarkModeContext } from "@/context/DarkMode";
+import useSectionActive from "@/hooks/useSectionActive";
 
 export default function NavbarMobile(props: allItemsRef) {
 
     const [activeElem, setActiveElem] = useState<null | HTMLElement>(null);
     const [firstLoad , setFirstLoad]=useState(false)
-    useFirstLoad(firstLoad , setFirstLoad ,"active-mobile-mode" , "#home-item-mobile")
+    // useFirstLoad(firstLoad , setFirstLoad ,"active-mobile-mode" , "#home-item-mobile")
     const {isDarkMode , setIsDarkMode}=useContext(DarkModeContext)
+    const {activeElemIdName , setActiveElemIdName} = useSectionActive(props)
+    
 
   return (
     <div className=" h-20 w-full bottom-1 fixed flex justify-center items-center left-0 right-6 lg:hidden">
@@ -21,7 +24,7 @@ export default function NavbarMobile(props: allItemsRef) {
         {data.iconNavbarItemsMobileMode.map((item) => (
           <li
           id={item.id}
-            className={`size-8 rounded-full flex items-center justify-center`}
+            className={` ${item.id === activeElemIdName[2] && 'active-mobile-mode'} size-8 rounded-full flex items-center justify-center`}
             key={item.id}
             onClick={(event) =>
               handleClickNavItem(
@@ -29,7 +32,6 @@ export default function NavbarMobile(props: allItemsRef) {
                 props[item.nameRef] as LegacyRef<HTMLDivElement>,
                 setActiveElem,
                 activeElem,
-                setFirstLoad,
                 "active-mobile-mode"
               )
             }

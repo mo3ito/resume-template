@@ -5,13 +5,15 @@ import handleScrollToView from "./handleScrollToView";
 const handleClickNavItem = async (
   element: HTMLElement,
   nameRef:  LegacyRef<HTMLDivElement>,
-  setActiveElem: Dispatch<SetStateAction<HTMLElement | null>>,
+  setActiveElem: Dispatch<SetStateAction<HTMLElement | null >>,
   activeElem: HTMLElement | null,
-  setFirstLoad: Dispatch<SetStateAction<boolean>>,
-  active: string
+  // setFirstLoad: Dispatch<SetStateAction<boolean>>,
+  active: string,
+  // idName: string
 ) => {
+  
   await setActiveElem(element);
-  await setFirstLoad(false);
+  // await setFirstLoad(false);
 
   if (activeElem) {
     activeElem?.classList?.remove(active);
