@@ -2,7 +2,7 @@ import React from 'react'
 import DefaultButton from './share/buttons/DefaultButton'
 import Link from 'next/link'
 import data from '@/data/data'
-import Image from 'next/image'
+
 
 export default function AsideLeft() {
   return (
