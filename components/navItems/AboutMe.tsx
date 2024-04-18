@@ -10,13 +10,14 @@ export default function AboutMe(props: AboutMeProps) {
       <Introducer keyWords="About Me" header="Frontend Developer" />
 
       <ContainerShowBox>
-        <ShowBox contentValue="Years of experience" value={data.yearsExperience} />
+        <ShowBox
+          contentValue="Years of experience"
+          value={data.yearsExperience}
+        />
         <ShowBox contentValue="Projects done" value={data.projectDone} />
       </ContainerShowBox>
 
-      <p className=" text-base md:text-lg lg:text-xl ">
-      {data.aboutMe}
-      </p>
+      <p className=" text-base md:text-lg lg:text-xl ">{data.aboutMe}</p>
     </div>
   );
 }

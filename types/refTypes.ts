@@ -1,4 +1,4 @@
-import { LegacyRef } from "react";
+import { LegacyRef , RefObject  } from "react";
 
 type HTMLElementRef = LegacyRef<HTMLDivElement> | undefined;
 
@@ -10,6 +10,15 @@ export type allItemsRef = {
   resumeRef: HTMLElementRef;
   contactRef: HTMLElementRef;
 };
+
+export type RefItemsProps = {
+  [key: string]: RefObject<HTMLDivElement>
+  aboutMeRef: RefObject<HTMLDivElement>;
+  homeRef: RefObject<HTMLDivElement>;
+  portfolioRef: RefObject<HTMLDivElement>;
+  resumeRef: RefObject<HTMLDivElement>;
+  contactRef: RefObject<HTMLDivElement>;
+}
 
 export type HomeProps = Pick<allItemsRef, "homeRef" | "portfolioRef">;
 

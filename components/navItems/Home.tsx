@@ -1,15 +1,11 @@
-'use client'
+"use client";
 import { LegacyRef } from "react";
 import Introducer from "../Introducer";
 import { HomeProps } from "@/types/refTypes";
 import handleScrollToView from "@/utils/handleScrollToView";
 import data from "@/data/data";
 
-
-export default function Home({ homeRef , portfolioRef}:HomeProps) {
-
-  
-
+export default function Home({ homeRef, portfolioRef }: HomeProps) {
   return (
     <div className="pt-10 lg:pt-36 " ref={homeRef}>
       <Introducer
@@ -17,10 +13,13 @@ export default function Home({ homeRef , portfolioRef}:HomeProps) {
         header="I'm Mostafa Entezami (mo3ito)"
         description="Web Developer"
       />
-            <p className=" text-base md:text-lg lg:text-xl ">
-      {data.homeIntroduce}
-      </p>
-      <button onClick={()=>handleScrollToView(portfolioRef as LegacyRef<HTMLDivElement>)} className=" w-32 h-8 text-sm sm:w-36 sm:h-10 lg:w-44 lg:h-14 sm:text-base lg:text-xl  common-style-item shadow-sm flex items-center justify-center gap-x-2 mt-4 lg:mt-10 ">
+      <p className=" text-base md:text-lg lg:text-xl ">{data.homeIntroduce}</p>
+      <button
+        onClick={() =>
+          handleScrollToView(portfolioRef as LegacyRef<HTMLDivElement>)
+        }
+        className=" w-32 h-8 text-sm sm:w-36 sm:h-10 lg:w-44 lg:h-14 sm:text-base lg:text-xl  common-style-item shadow-sm flex items-center justify-center gap-x-2 mt-4 lg:mt-10 "
+      >
         My Works
         <svg
           className=" size-4 sm:size-5  dark:fill-white stroke-2"

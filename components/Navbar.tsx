@@ -1,6 +1,6 @@
 "use client";
 import { useState , useContext , LegacyRef , useEffect } from "react";
-import { allItemsRef } from "@/types/refTypes";
+import { RefItemsProps } from "@/types/refTypes";
 import DefaultButton from "./share/buttons/DefaultButton";
 import data from "@/data/data";
 import handleClickNavItem from "@/utils/handleClickNavItem";
@@ -10,7 +10,7 @@ import ChangeModeButton from "./share/ChangeModeButton";
 import { DarkModeContext } from "@/context/DarkMode";
 import useSectionActive from "@/hooks/useSectionActive";
 
-export default function Navbar(props : allItemsRef) {
+export default function Navbar(props : RefItemsProps) {
 
   const [activeElem, setActiveElem] = useState<null | HTMLElement>(null);
 
