@@ -1,5 +1,5 @@
 "use client";
-import { useState , useContext , LegacyRef , useEffect } from "react";
+import { useState , useContext , LegacyRef } from "react";
 import { RefItemsProps } from "@/types/refTypes";
 import DefaultButton from "./share/buttons/DefaultButton";
 import data from "@/data/data";
@@ -37,7 +37,7 @@ export default function Navbar(props : RefItemsProps) {
         </ul>
         <div className=" hidden lg:flex h-max  lg:w-4/12  items-center gap-x-6 justify-end ">
           <ChangeModeButton onClick={()=>changeThemeHandler(setIsDarkMode)} containerclassName="[&>*]:theme-mode-icon shadow-md shadow-md dark:bg-black " />
-          <DefaultButton classNameContent="lg:text-base xl:text-lg" isLinkTag={true} href={data.telegram} className="  w-40 h-12  2xl:w-44 2xl:h-16" content="Let's Talk">
+          <DefaultButton classNameContent="lg:text-base xl:text-lg" isLinkTag={true} href={data.telegram} className="  w-40 h-12  2xl:w-44 2xl:h-16 rounded-3xl" content="Let's Talk">
           <svg className=" size-5 2xl:size-7 inline-block ml-2 -translate-y-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M6.45455 19L2 22.5V4C2 3.44772 2.44772 3 3 3H21C21.5523 3 22 3.44772 22 4V18C22 18.5523 21.5523 19 21 19H6.45455ZM5.76282 17H20V5H4V18.3851L5.76282 17ZM11 10H13V12H11V10ZM7 10H9V12H7V10ZM15 10H17V12H15V10Z"></path></svg>
           </DefaultButton>
         </div>

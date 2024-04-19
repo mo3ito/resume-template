@@ -50,7 +50,7 @@ export default function ContactMeBox() {
       <DefaultButton
         isLoading={isLoadingForResponse}
         content="Send Message"
-        className=" dark:text-black w-56  lg:w-64 my-8 text-white h-12 lg:h-16"
+        className=" dark:text-black w-56  lg:w-64 my-8 text-white h-12 lg:h-16 rounded-3xl"
         classNameContent='text-base sm:text-lg '
       >
         <svg

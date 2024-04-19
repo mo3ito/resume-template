@@ -1,4 +1,4 @@
-import React, { useState, useContext, LegacyRef , RefObject } from "react";
+import React, { useState, useContext, LegacyRef } from "react";
 import data from "@/data/data";
 import handleClickNavItem from "@/utils/handleClickNavItem";
 import {RefItemsProps} from "@/types/refTypes";
@@ -7,6 +7,7 @@ import changeThemeHandler from "@/utils/changeThemeHandler";
 import ChangeModeButton from "./share/ChangeModeButton";
 import { DarkModeContext } from "@/context/DarkMode";
 import useSectionActive from "@/hooks/useSectionActive";
+import Link from "next/link";
 
 
 
@@ -50,6 +51,11 @@ export default function NavbarMobile(props: RefItemsProps) {
             darkModeClassName="dark:fill-zinc-300"
             lightModeClassName="fill-zinc-300"
           />
+        </li>
+        <li>
+          <Link href={data.telegram} className=" shadow-md bg-gradient-to-r from-purple-400 to-purple-600 dark:from-pink-200 dark:to-pink-300  inline-block p-[5px] rounded-full mt-1">
+          <svg className="size-5 fill-zinc-300 dark:fill-zinc-600 " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M6.45455 19L2 22.5V4C2 3.44772 2.44772 3 3 3H21C21.5523 3 22 3.44772 22 4V18C22 18.5523 21.5523 19 21 19H6.45455ZM5.76282 17H20V5H4V18.3851L5.76282 17ZM11 10H13V12H11V10ZM7 10H9V12H7V10ZM15 10H17V12H15V10Z"></path></svg>
+          </Link>
         </li>
       </ul>
     </div>
