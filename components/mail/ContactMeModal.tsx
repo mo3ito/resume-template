@@ -40,7 +40,7 @@ export const ContactMeModal = () => {
         className="w-full text-white dark:text-black max-[400px]:h-12 h-16 rounded-xl "
       >
         <svg
-          className="size-6 inline-block  ml-2 fill-white dark:fill-black"
+          className="size-5 inline-block  ml-2 fill-white dark:fill-black"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
           
