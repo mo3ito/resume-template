@@ -18,7 +18,7 @@ export default function DiscribeProject({
 }: DiscribeProjectProps) {
   return (
     <div key={id} className=" mb-8 ">
-      <div className="">
+      <div className="mb-1">
       <span className="font-bold inline-block text-lg sm:text-xl xl:text-2xl">{projectName}:</span> 
       <span className=" text-base sm:text-lg  xl:text-xl ml-1">{descriptionProject}</span>
       </div>
