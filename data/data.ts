@@ -68,7 +68,7 @@ const data = {
       id: "project-1",
       projectName: "Siraf",
       descriptionProject:
-        "The Siraf site is an application for buying and selling, renting and consulting in the field of real estate, which is coded with the Next.js framework, and I have worked as a frontend developer in its programming team. My duties in this team were chat room coding, support, commission calculations, my real estate offices and files around me (map and location implementation).",
+        "The Siraf site is an application for buying and selling, renting and consulting in the field of real estate, which is coded with the Next.js framework, and I have worked as a frontend developer in its programming team. My duties in this team have been coding the chat room, support, commission calculations, my real estate offices and files around me (map and location implementation).",
       linkProject : "https://siraf.app/",
     },
 
