@@ -5,7 +5,7 @@ import ContactMeBox from "../mail/ContactMeBox";
 
 export default function CnontactMeSection(props: ContactMeSectionProps) {
   return (
-    <div className="  lg:pt-24 pb-56 pt-10 " ref={props.contactRef}>
+    <div className="  lg:pt-24 pb-56 pt-2 " ref={props.contactRef}>
       <Introducer keyWords="Contact" header="Communication and cooperation" />
       <ContactMeBox />
     </div>
