@@ -13,11 +13,11 @@ const sendMailHandler = async (
     if (formRef?.current) {
       setIsLoadingForResponse(true);
       await emailjs.sendForm(
-        "service_264s7x2",
-        "template_3h472ui",
+        "service_id",
+        "template_id",
         formRef.current,
         {
-          publicKey: "S1i02YYSBA6oGu2RM",
+          publicKey: "publick_key",
         }
       );
       formRef.current.reset();
