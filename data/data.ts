@@ -83,7 +83,7 @@ const data = {
         id: "project-3",
         projectName: "Resume Template",
         descriptionProject:"A site template (the same site you are viewing) has two modes, dark mode and light mode that I have developed with Typescript language and Next.js framework and I have used Tailwindcss framework for Css and I have used libraries such as React-toastify, Email.js and etc libraries.",
-        githubLink:"https://github.com/mo3ito/resume" ,
+        githubLink:"https://github.com/mo3ito/resume-template" ,
         linkProject : "https://mostafa-entezami.dev/"
       },
   ],
