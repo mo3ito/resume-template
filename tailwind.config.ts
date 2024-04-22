@@ -12,7 +12,7 @@ const config: Config = {
     extend: {
       fontFamily:{
         exo2: ['var(--font-exo2)'],
-        josefinsSans: ['var(--font-josefinsSans)'],
+        jost: ['var(--font-jost)'],
       },
     },
   },

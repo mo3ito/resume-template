@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import {  Exo_2 , Josefin_Sans ,  Jost } from "next/font/google";
+import {  Exo_2  ,  Jost } from "next/font/google";
 import "./globals.css";
 import DarkModeProvider from "@/context/DarkMode";
 import MailModal from "@/components/mail/MailModal";
@@ -12,9 +12,9 @@ const exo2 = Exo_2({
   variable: '--font-exo2',
 })
 
-const josefinsSans = Jost({
+const jost = Jost({
   subsets: ['latin'],
-  variable: '--font-josefinsSans',
+  variable: '--font-jost',
 })
  
 
@@ -31,7 +31,7 @@ export default function RootLayout({
   return (
     <DarkModeProvider>
     <html lang="en">
-      <body  className={` ${josefinsSans.variable} ${exo2.variable} font-josefinsSans h-max w-full bg-slate-200 dark:bg-black overflow-y-scroll text-zinc-600 dark:text-zinc-300`}>
+      <body  className={` ${jost.variable} ${exo2.variable} font-jost h-max w-full bg-slate-200 dark:bg-black overflow-y-scroll text-zinc-600 dark:text-zinc-300`}>
         {children}
         <Suspense fallback={<LoadingPage/>}>
         <MailModal/>
