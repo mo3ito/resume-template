@@ -2,7 +2,7 @@ import { LegacyRef , RefObject  } from "react";
 
 type HTMLElementRef = LegacyRef<HTMLDivElement> | undefined;
 
-export type allItemsRef = {
+export type AllItemsRef = {
   [key: string]: HTMLElementRef;
   aboutMeRef: HTMLElementRef;
   homeRef: HTMLElementRef;
@@ -20,10 +20,10 @@ export type RefItemsProps = {
   contactRef: RefObject<HTMLDivElement>;
 }
 
-export type HomeProps = Pick<allItemsRef, "homeRef" | "portfolioRef">;
+export type HomeProps = Pick<AllItemsRef, "homeRef" | "portfolioRef">;
 
-export type AboutMeProps = Pick<allItemsRef, "aboutMeRef">;
+export type AboutMeProps = Pick<AllItemsRef, "aboutMeRef">;
 
-export type PortfolioProps = Pick<allItemsRef, "portfolioRef">;
+export type PortfolioProps = Pick<AllItemsRef, "portfolioRef">;
 
-export type ContactMeSectionProps = Pick<allItemsRef, "contactRef">;
+export type ContactMeSectionProps = Pick<AllItemsRef, "contactRef">;

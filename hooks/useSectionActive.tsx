@@ -1,5 +1,5 @@
 import { useEffect, useState , RefObject } from "react"
-import { allItemsRef } from "@/types/refTypes"
+
 
 type UseSectionActiveProps = {
     aboutMeRef: RefObject<HTMLDivElement>;
