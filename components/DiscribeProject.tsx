@@ -17,7 +17,7 @@ export default function DiscribeProject({
   githubLink,
 }: DiscribeProjectProps) {
   return (
-    <div key={id} className=" mb-8 ">
+    <article key={id} className="mb-8">
       <div className="mb-1">
       <span className="font-bold inline-block text-lg sm:text-xl xl:text-2xl">{projectName}:</span> 
       <span className=" text-base sm:text-lg  xl:text-xl ml-1">{descriptionProject}</span>
@@ -35,6 +35,6 @@ export default function DiscribeProject({
         <Link className="ml-1 underline text-blue-500 text-base sm:text-lg lg:text-xl" href={linkProject ? linkProject : ""}>{linkProject}</Link>
       </div>
       </div>
-    </div>
+    </article>
   );
 }
