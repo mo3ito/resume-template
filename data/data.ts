@@ -8,7 +8,7 @@ const data = {
   telegram: "https://www.t.me/mo3ito",
   specialization: "Frontend Developer",
   skills:
-    "Html5, Css3, JavaScript, TypeScript, React, Next.js, Tailwindcss, Bootstrap, Redux, Node.js, MongoDB, Rest Api, Npm, Git, Responsive Design ,Linux , English",
+    "Html5, Css3, JavaScript, TypeScript, React, Next.js, Tailwindcss, Bootstrap, Redux, Node.js, MongoDB, Rest Api, Npm, Git, Responsive Design ,Linux ,English",
   yearsExperience: "+2",
   projectDone: "+5",
   homeIntroduce:"My journey into coding began with a fascination for problem-solving – a passion that continues to fuel my endeavors today. I've always been averse to routine and passionate about creating. One of the main reasons for my interest in programming and technology is creating websites and apps that make life easier. Whether it's architecting elegant solutions to intricate UI/UX dilemmas or optimizing performance through ingenious coding techniques, I approach each task with an unwavering commitment to excellence. I'm constantly enamored with learning and improving myself, implementing projects with the latest methods.",
