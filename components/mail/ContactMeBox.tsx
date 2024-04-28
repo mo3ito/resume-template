@@ -1,6 +1,6 @@
 import { useRef, useState } from "react";
 import DefaultButton from "../share/buttons/DefaultButton";
-import sendMsendMailHandler from "@/utils/sendMailHandler";
+import sendMailHandler from "@/utils/sendMailHandler";
 import { useRouter } from "next/navigation";
 import InputForEmailForm from "../share/InputForEmailForm";
 
