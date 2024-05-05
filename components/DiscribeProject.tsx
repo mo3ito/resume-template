@@ -5,7 +5,7 @@ type DiscribeProjectProps = {
   id:string;
   projectName: string;
   descriptionProject: string;
-  linkProject: string;
+  linkProject: string | undefined;
   githubLink: string | undefined;
 };
 
