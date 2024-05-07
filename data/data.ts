@@ -68,20 +68,20 @@ const data = {
       id: "project-1",
       projectName: "Siraf",
       descriptionProject:
-        "The Siraf site is an application for buying and selling, renting and consulting in the field of real estate, which is coded with the Next.js framework, and I have worked as a frontend developer in its programming team. My duties in this team have been coding the chat room, support, commission calculations, my real estate offices and files around me (map and location implementation).",
+        "The Siraf site is an application for buying, selling, renting and consulting in the field of real estate, which is coded with the Next.js framework. My duties in this team have been coding the chat room, support, commission calculations, my real estate offices and files around me (map and location implementation).",
       linkProject : "https://siraf.app/",
     },
 
     {
         id: "project-2",
         projectName: "EyeRoll",
-        descriptionProject:"It is a startup application in the field of discount, advertisement and online menu, which is an idea of ​​mine. This application creates an identity card for each business. Its frontend programming language is Typescript and Next.js framework, and I have used libraries such as Swiper, Moment, Recharts, React-query, React-toastify, React-datepicker, Axios, JWT, Tailwindcss, etc. for backend I developed the project with Node.js and I have used libraries such as Express, Socket.io, JWT, Nodemailer, Moment, Multer, etc.",
+        descriptionProject:"It is a startup application in the field of discount, advertisement and online menu, the idea of ​​which is my own. This application creates an identity card for every business whose frontend programming language is Typescript. the framework that I used was Next.js, and I used libraries such as swiper, moment, recharts, react-query, react-toastify, react-datepicker, axios, JWT, tailwindcss, etc. for backend I developed the project with Node.js and used express, socket.io, JWT, nodemailer, moment, multer, etc. libraries.",
         githubLink:"https://github.com/mo3ito/eyeRoll-frontend" ,
       },
       {
         id: "project-3",
         projectName: "Resume Template",
-        descriptionProject:"A site template (the same site you are viewing) has two modes, dark mode and light mode that I have developed with Typescript language and Next.js framework and I have used Tailwindcss framework for Css and I have used libraries such as React-toastify, Email.js and etc libraries.",
+        descriptionProject:"I have designed a template for presenting a resume whose language is Typescript and developed with the Next.js framework. I used Tailwindcss framework to implement Css and made it responsive, I also used email.js and react-toastify libraries in it.",
         githubLink:"https://github.com/mo3ito/resume-template" ,
         linkProject : "https://mostafa-entezami.dev/"
       },
