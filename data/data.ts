@@ -75,7 +75,7 @@ const data = {
     {
         id: "project-2",
         projectName: "EyeRoll",
-        descriptionProject:"It is a startup application in the field of discount, advertisement and online menu, the idea of ​​which is my own. This application creates an identity card for every business whose frontend programming language is Typescript. the framework that I used was Next.js, and I used libraries such as swiper, moment, recharts, react-query, react-toastify, react-datepicker, axios, JWT, tailwindcss, etc. for backend I developed the project with Node.js and used express, socket.io, JWT, nodemailer, moment, multer, etc. libraries.",
+        descriptionProject:"It is a startup application in the field of discount, advertisement and online menu. This application creates an identity card for every business whose frontend programming language is Typescript. the framework that I used was Next.js, and I used libraries such as swiper, moment, recharts, react-query, react-toastify, react-datepicker, axios, JWT, tailwindcss, etc. for backend I developed the project with Node.js and used express, socket.io, JWT, nodemailer, moment, multer, etc. libraries.",
         githubLink:"https://github.com/mo3ito/eyeRoll-frontend" ,
       },
       {
