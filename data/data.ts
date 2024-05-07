@@ -81,7 +81,7 @@ const data = {
       {
         id: "project-3",
         projectName: "Resume Template",
-        descriptionProject:"I have designed a template for presenting a resume whose language is Typescript and developed with the Next.js framework. I used Tailwindcss framework to implement Css and made it responsive, I also used email.js and react-toastify libraries in it.",
+        descriptionProject:"I have developed a template for presenting a resume whose language is Typescript and developed with the Next.js framework. I used Tailwindcss framework to implement Css and made it responsive, I also used email.js and react-toastify libraries in it.",
         githubLink:"https://github.com/mo3ito/resume-template" ,
         linkProject : "https://mostafa-entezami.dev/"
       },
