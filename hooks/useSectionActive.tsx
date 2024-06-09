@@ -21,7 +21,7 @@ const useSectionActive = (props: UseSectionActiveProps) => {
       if (props) {
         if (
           props.contactRef?.current &&
-          window.scrollY >= props.contactRef?.current.offsetTop - 250
+          window.scrollY >= props.contactRef?.current.offsetTop - 500
         ) {
           setActiveElemIdName([
             "contact-item",
