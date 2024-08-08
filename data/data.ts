@@ -7,7 +7,7 @@ const data = {
   telegram: "https://www.t.me/mo3ito",
   specialization: "Frontend Developer",
   skills:
-    "Html5, Css3, JavaScript, TypeScript, React, Next.js, Tailwindcss, Bootstrap, Redux, Node.js, MongoDB, Rest Api, Npm, Git, Docker, Responsive Design, Linux, English",
+    "Html5, Css3, JavaScript, TypeScript, React, Next.js, Pwa, Tailwindcss, Bootstrap, Redux, Node.js, MongoDB, Rest Api, Npm, Git, Docker, Responsive Design, Linux, English",
   yearsExperience: "+2",
   projectDone: "+5",
   homeIntroduce:
