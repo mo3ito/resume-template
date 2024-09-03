@@ -76,8 +76,8 @@ const data = {
       id: "project-2",
       projectName: "Mosito-pak",
       descriptionProject:
-        "The Mosit-pak site is an application for online laundry whose frontend programming language is Typescript. the framework that I used was Next.js, and I used libraries such as swiper, react-query, react-toastify, axios, JWT, tailwindcss, etc. for backend I developed the project with Node.js and used express, JWT, nodemailer, etc. libraries. I have also developed the PWA of this project, which can be seen at mo3ito-pak.ir ",
-      linkProject: "https://mosito-pak.ir/",
+        "The Mosit-pak site is an application for online laundry whose frontend programming language is Typescript. the framework that I used was Next.js, and I used libraries such as swiper, react-query, react-toastify, axios, JWT, tailwindcss, etc. for backend I developed the project with Node.js and used express, JWT, nodemailer, etc. libraries.",
+      githubLink: "https://github.com/mo3ito/online-laundry",
     },
 
     {
