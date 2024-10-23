@@ -9,7 +9,7 @@ const data = {
   skills:
     "Html5, Css3, JavaScript, TypeScript, React, Next.js, Pwa, Tailwindcss, Bootstrap, Redux, Node.js, MongoDB, Rest Api, Npm, Git, Docker, Responsive Design, Linux, English",
   yearsExperience: "+2",
-  projectDone: "+5",
+  projectDone: "+6",
   homeIntroduce:
     "My journey into coding began with a fascination for problem-solving – a passion that continues to fuel my endeavors today. I've always been averse to routine and passionate about creating. One of the main reasons for my interest in programming and technology is creating websites and apps that make life easier. Whether it's architecting elegant solutions to intricate UI/UX dilemmas or optimizing performance through ingenious coding techniques, I approach each task with an unwavering commitment to excellence. I'm constantly enamored with learning and improving myself, implementing projects with the latest methods.",
   aboutMe:
@@ -74,6 +74,21 @@ const data = {
     },
     {
       id: "project-2",
+      projectName: "Live Bitcoin Chart",
+      descriptionProject:
+        "I developed a React-based Bitcoin price chart, featuring a header inspired by the Binance website that displays real-time price and fluctuation data. The project uses the ApexCharts library to visualize price movements across multiple timeframes, with data fetched from the Binance API. To view the site, VPN access is required due to API restrictions.",
+      linkProject: "https://fonosharp-task.vercel.app/",
+      githubLink: "https://github.com/mo3ito/fonosharp-task",
+    },
+    {
+      id: "project-3",
+      projectName: "Chatroom",
+      descriptionProject:
+        "This project is a chat room whose frontend is Next.js framework and its backend is Node.js. I have also used socket.io to communicate between Backend and frontend",
+      githubLink: "https://github.com/mo3ito/chat-room",
+    },
+    {
+      id: "project-4",
       projectName: "Mosito-pak",
       descriptionProject:
         "The Mosit-pak site is an application for online laundry whose frontend programming language is Typescript. the framework that I used was Next.js, and I used libraries such as swiper, react-query, react-toastify, axios, JWT, tailwindcss, etc. for backend I developed the project with Node.js and used express, JWT, nodemailer, etc. libraries.",
@@ -81,14 +96,14 @@ const data = {
     },
 
     {
-      id: "project-3",
+      id: "project-5",
       projectName: "EyeRoll",
       descriptionProject:
         "It is a startup application in the field of discount, advertisement and online menu. This application creates an identity card for every business whose frontend programming language is Typescript. the framework that I used was Next.js, and I used libraries such as swiper, moment, recharts, react-query, react-toastify, react-datepicker, axios, JWT, tailwindcss, etc. for backend I developed the project with Node.js and used express, socket.io, JWT, nodemailer, moment, multer, etc. libraries.",
       githubLink: "https://github.com/mo3ito/eyeRoll-frontend",
     },
     {
-      id: "project-4",
+      id: "project-6",
       projectName: "Resume Template",
       descriptionProject:
         "I have developed a template for presenting a resume whose language is Typescript and developed with the Next.js framework. I used Tailwindcss framework to implement Css and made it responsive, I also used email.js and react-toastify libraries in it.",
