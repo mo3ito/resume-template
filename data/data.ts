@@ -76,7 +76,7 @@ const data = {
       id: "project-2",
       projectName: "Live Bitcoin Chart",
       descriptionProject:
-        "I developed a React-based Bitcoin price chart, featuring a header inspired by the Binance website that displays real-time price and fluctuation data. The project uses the ApexCharts library to visualize price movements across multiple timeframes, with data fetched from the Binance API. To view the site, VPN access is required due to API restrictions.",
+        "I developed a React-based Bitcoin price chart with light and dark modes, featuring a Binance-inspired header that displays real-time price and volatility data. The project uses ApexCharts for visualizing price movements across multiple timeframes, with data fetched from the Binance API. Due to API restrictions, VPN access is required to view the site.",
       linkProject: "https://fonosharp-task.vercel.app/",
       githubLink: "https://github.com/mo3ito/fonosharp-task",
     },
@@ -84,7 +84,7 @@ const data = {
       id: "project-3",
       projectName: "Chatroom",
       descriptionProject:
-        "This project is a chat room whose frontend is Next.js framework and its backend is Node.js. I have also used socket.io to communicate between Backend and frontend",
+        "This project is a chat room whose frontend is Next.js framework and its backend is Node.js. I have also used socket.io to communicate between Backend and frontend.",
       githubLink: "https://github.com/mo3ito/chat-room",
     },
     {
